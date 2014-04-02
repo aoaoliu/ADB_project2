@@ -1,0 +1,65 @@
+COMS E6111 Advanced Database Systems (Columbia Computer Science, Prof. Luis Gravano)
+
+Spring 2014 Project 2
+
+infobox and question_answering
+
+##(assignment: http://www.columbia.edu/~sy2515/COMS_E6111_Project_1.pdf)
+
+
+a.  Team members:
+
+    Yunao Liu - yl3055
+
+    Shuo Yang - sy2515
+
+
+b.  List:
+
+    README
+
+    Main.py
+
+    infobox.py
+
+    Part2.py
+
+    transcript.txt
+
+    Interface.py
+
+    queries1.txt
+
+    queries2.txt
+
+
+c.  How to run:
+
+1. ./Main.py -key <Freebase API key> -q <query> -t <infobox|question>
+
+OR
+
+2. ./Main.py -key <Freebase API key> -f <file of queries> -t <infobox|question>
+
+OR
+
+3. ./Main.py -key <Freebase API key>
+
+For option#3, if you want to submit a question, please use the format of "who created XXX ?", otherwise, your query will be answered by infobox.
+
+
+d.  Internal design:
+
+->part1(by Shuo Yang)
+##
+
+->part2(by Yunao Liu)
+##
+
+f.  Bing search key:
+    AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4
+
+
+g.  Additional information:
+
+##
