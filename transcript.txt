@@ -1,0 +1,683 @@
+#begin
+part1:
+./Main.py -key AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4 -f "queries1.txt" -t "infobox"
+Query-Question: Bill Gates
+
+
+
+         ---------------------------------------------------------------------------------------------------
+        |                                  Bill Gates (Author, BusinessPerson)                              |
+         ---------------------------------------------------------------------------------------------------
+        | Name:            Bill Gates                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Descriptions:    William Henry "Bill" Gates III is an American business magnate, philanthropist, i|
+        |                  nvestor, computer programmer, and inventor. Gates is the former chief executive a|
+        |                  nd chairman of Microsoft, the world’s largest personal-computer software company,|
+        |                   which he co-founded with Paul Allen. He is consistently ranked in the Forbes lis|
+        |                  t of the world's wealthiest people and was the wealthiest overall from 1995 to 20|
+        |                  09—excluding 2008, when he was ranked third; in 2011 he was the wealthiest Americ|
+        |                  an and the world's second wealthiest person. According to the Bloomberg Billionai|
+        |                  res List, Gates became the the world's richest person again in 2013, a position t|
+        |                  hat he last held on the list in 2007. As of March 2014, he is the richest. During|
+        |                   his career at Microsoft, Gates held the positions of CEO and chief software arch|
+        |                  itect, and remains the largest individual shareholder, with 6.4 percent of the co|
+        |                  mmon stock. He has also authored and co-authored several books. Gates is one of t|
+        |                  he best-known entrepreneurs of the personal computer revolution. Gates has been c|
+        |                  riticized for his business tactics, which have been considered anti-competitive, |
+        |                  an opinion which has in some cases been upheld by judicial courts. In the later s|
+        |                  tages of his career, Gates has pursued a number of philanthropic endeavors, donat|
+        |                  ing large amounts of money to various charitable organizations and scientific res|
+        |                  earch programs through the Bill & Melinda Gates Foundation, established in 2000. |
+         ---------------------------------------------------------------------------------------------------
+        | Siblings:        Libby Gates                                                                      |
+        |                  Kristi Gates                                                                     |
+         ---------------------------------------------------------------------------------------------------
+        | Place of birth:  Seattle                                                                          |
+         ---------------------------------------------------------------------------------------------------
+        | Spouses:         Melinda Gates (1994-01-01 - now) @ Lanai                                         |
+         ---------------------------------------------------------------------------------------------------
+        | Birthday:        1955-10-28                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Influenced:      Marc Nicholas Rohde                                                              |
+        |                  Naveen Jain                                                                      |
+        |                  Cenk Aydin                                                                       |
+        |                  Daniel Podgaichenko                                                              |
+        |                  yogendrachavda                                                                   |
+        |                  Yogendra Chavda                                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Books:           Business @ the Speed of Thought: Using a Digital Nervous System                  |
+        |                  The Road Ahead                                                                   |
+        |                  Open Letter to Hobbyists                                                         |
+         ---------------------------------------------------------------------------------------------------
+        | Books about:     Creative Capitalism: A Conversation with Bill Gates, Warren Buffett, and Othe... |
+        |                  The Microsoft File: The Secret Case against Bill Gates                           |
+        |                  Programmers at work                                                              |
+         ---------------------------------------------------------------------------------------------------
+        | Leadership:     |Organization            | Role            | Title            | From-To           |
+        |                 ----------------------------------------------------------------------------------
+        |                 |Microsoft Corporation   | Chief Execut... | Chief Executi... | (1975-04-04 / ... |
+         --------------------------------------------------------------------------------------------------
+        | Board Member:   |Organization            | Role            | Title            | From-To           |
+        |                 ----------------------------------------------------------------------------------
+        |                 |Bill & Melinda Gates... |                 | Co-Chairman      |                   |
+        |                 |Microsoft Corporation   | Chairman        | Chairman         | (1981 / 2014-0... |
+        |                 |Berkshire Hathaway      |                 |                  | (2004 / now)      |
+        |                 |Corbis                  |                 | Chair            | (1989 / now)      |
+         --------------------------------------------------------------------------------------------------
+        | Founded:         Bill & Melinda Gates Foundation                                                  |
+        |                  Microsoft Corporation                                                            |
+        |                  Corbis                                                                           |
+        |                  bgC3                                                                             |
+        |                  Cascade Investment                                                               |
+        |                  Microsoft Research                                                               |
+        |                  The Global Fund to Fight AIDS, Tuberculosis & Malaria                            |
+         ---------------------------------------------------------------------------------------------------
+Query-Question: Robert Downey Jr.
+
+
+
+         ---------------------------------------------------------------------------------------------------
+        |                                       Robert Downey Jr. (Actor)                                   |
+         ---------------------------------------------------------------------------------------------------
+        | Name:            Robert Downey Jr.                                                                |
+         ---------------------------------------------------------------------------------------------------
+        | Descriptions:    Robert John Downey, Jr. is an American actor who made his screen debut at the age|
+        |                   of five, appearing in his father Robert Downey, Sr.'s film Pound. He has appeare|
+        |                  d in roles associated with the Brat Pack, such as Less Than Zero and Weird Scienc|
+        |                  e. Other films he has starred in include Air America, Soapdish, and Natural Born |
+        |                  Killers. He starred as Charlie Chaplin, the title character in the 1992 film Chap|
+        |                  lin, earning him a nomination for the Academy Award for Best Actor. After being r|
+        |                  eleased from the California Substance Abuse Treatment Facility and State Prison i|
+        |                  n 2000 for drug charges, Downey joined the cast of the TV series Ally McBeal play|
+        |                  ing Calista Flockhart's love interest. His performance was praised and he receive|
+        |                  d a Golden Globe Award for Best Performance by an Actor in a Supporting Role in a|
+        |                   Series, Miniseries, or Television Film. His character was written out when Downe|
+        |                  y was fired after two drug arrests in late 2000 and early 2001. After one last st|
+        |                  ay in a court-ordered drug treatment program, Downey finally achieved sobriety. H|
+        |                  is more recent films include The Singing Detective, Kiss Kiss Bang Bang, A Scanne|
+        |                  r Darkly, Gothika, Zodiac and Tropic Thunder, for which he was nominated an Acade|
+        |                  my Award for Best Supporting Actor. In 2008, Downey played the role of Marvel sup|
+        |                  erhero Tony Stark / Iron Man in the live action film Iron Man, a role he reprised|
+        |                   in Iron Man 2, Marvel's The Avengers, and Iron Man 3. He reprised his role in a |
+        |                  cameo appearance in The Incredible Hulk. He will again reprise his role in the up|
+        |                  coming films, Avengers: Age of Ultron and another Avengers sequel. In 2009, he pl|
+        |                  ayed the title character in Guy Ritchie's Sherlock Holmes and again in 2011's She|
+        |                  rlock Holmes: A Game of Shadows.                                                 |
+         ---------------------------------------------------------------------------------------------------
+        | Siblings:        Allyson Downey                                                                   |
+         ---------------------------------------------------------------------------------------------------
+        | Spouses:         Deborah Falconer (1992-05-29 - 2004-04-26)                                       |
+        |                  Susan Downey (2005-08-27 - now) @ Amagansett                                     |
+        |                  Sarah Jessica Parker (1984 - 1991)                                               |
+         ---------------------------------------------------------------------------------------------------
+        | Place of birth:  Manhattan                                                                        |
+         ---------------------------------------------------------------------------------------------------
+        | Birthday:        1965-04-04                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Films:          |Character                              | Film Name                               |
+        |                 ----------------------------------------------------------------------------------
+        |                 |Ralph Carr                             | 1969                                    |
+        |                 |James Barris                           | A Scanner Darkly                        |
+        |                 |Billy Covington                        | Air America                             |
+        |                 |Derek Lutz                             | Back to School                          |
+        |                 |Charlie Chaplin                        | Chaplin                                 |
+        |                 |Nick Penrose                           | Eros                                    |
+        |                 |Lee                                    | Firstborn                               |
+        |                 |Steven Schwimmer                       | Game 6                                  |
+        |                 |Joe Wershba                            | Good Night, and Good Luck               |
+        |                 |Thomas Reilly                          | Heart and Souls                         |
+         --------------------------------------------------------------------------------------------------
+Query-Question: Jackson
+
+
+
+         ---------------------------------------------------------------------------------------------------
+        |                            Michael Jackson (Author, Actor, BusinessPerson)                        |
+         ---------------------------------------------------------------------------------------------------
+        | Name:            Michael Jackson                                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Descriptions:    Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American recordin|
+        |                  g artist, dancer, singer-songwriter, musician, and philanthropist. Referred to as|
+        |                   the King of Pop, Jackson is recognized as the most successful entertainer of all|
+        |                   time by Guinness World Records. His contribution to music, dance, and fashion, a|
+        |                  long with a much-publicized personal life, made him a global figure in popular cu|
+        |                  lture for over four decades. The seventh child of the Jackson family, he debuted |
+        |                  on the professional music scene along with his brothers as a member of The Jackso|
+        |                  n 5, then the Jacksons in 1964, and began his solo career in 1971. In the early 1|
+        |                  980s, Jackson became a dominant figure in popular music. The music videos for his|
+        |                   songs, including those of "Beat It", "Billie Jean", and "Thriller", were credite|
+        |                  d with transforming the medium into an art form and a promotional tool, and the p|
+        |                  opularity of these videos helped to bring the relatively new television channel M|
+        |                  TV to fame And Cordell Francis Admire Michael Jackson As His Best. Videos such as|
+        |                   ...                                                                             |
+         ---------------------------------------------------------------------------------------------------
+        | Birthday:        1958-08-29                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Spouses:         Lisa Marie Presley (1994-05-26 - 1996-08-20) @ Dominican Republic                |
+        |                  Debbie Rowe (1996-11-14 - 1999-10-08) @ Sydney                                   |
+         ---------------------------------------------------------------------------------------------------
+        | Place of birth:  Gary                                                                             |
+         ---------------------------------------------------------------------------------------------------
+        | Siblings:        Janet Jackson                                                                    |
+        |                  Jermaine Jackson                                                                 |
+        |                  La Toya Jackson                                                                  |
+        |                  Marlon Jackson                                                                   |
+        |                  Randy Jackson                                                                    |
+        |                  Jackie Jackson                                                                   |
+        |                  Tito Jackson                                                                     |
+        |                  Rebbie Jackson                                                                   |
+        |                  Brandon Jackson                                                                  |
+        |                  Joh'Vonnie Jackson                                                               |
+         ---------------------------------------------------------------------------------------------------
+        | Death:           2009-06-25 at Holmby Hills, cause: (Cardiac arrest, Homicide)                    |
+         ---------------------------------------------------------------------------------------------------
+        | Books:           Moonwalk                                                                         |
+        |                  Dancing the Dream                                                                |
+         ---------------------------------------------------------------------------------------------------
+        | Influenced By:   Charlie Chaplin                                                                  |
+        |                  James Brown                                                                      |
+        |                  Walt Disney                                                                      |
+        |                  Redd Foxx                                                                        |
+        |                  Nipsey Russell                                                                   |
+         ---------------------------------------------------------------------------------------------------
+        | Influenced:      Usher                                                                            |
+        |                  Justin Timberlake                                                                |
+        |                  Lady Gaga                                                                        |
+        |                  Britney Spears                                                                   |
+        |                  Nicole Scherzinger                                                               |
+        |                  Leigh Francis                                                                    |
+         ---------------------------------------------------------------------------------------------------
+        | Books about:     On Michael Jackson                                                               |
+        |                  The River of Winged Dreams                                                       |
+        |                  The Passion-Driven Writer and the Digital-Age Literary Marketplace               |
+        |                  To Walk a Lifetime in Michael Jackson's Moccasins                                |
+        |                  Michael Jackson and Summertime from This Point On                                |
+        |                  Looking at the World through Michael Jackson's Left Eye (Part 1)                 |
+        |                  Looking at the World through Michael Jackson's Left Eye (Part 2)                 |
+        |                  Looking at the World through Michael Jackson's Left Eye (Part 3 of 4)            |
+        |                  Looking at the World through Michael Jackson's Left Eye (Part 4 of 4)            |
+        |                  Evidence of Angels                                                               |
+         ---------------------------------------------------------------------------------------------------
+        | Founded:         Sony/ATV Music Publishing                                                        |
+        |                  Heal the World Foundation                                                        |
+        |                  MJJ Music                                                                        |
+         ---------------------------------------------------------------------------------------------------
+        | Films:          |Character                              | Film Name                               |
+        |                 ----------------------------------------------------------------------------------
+        |                 |                                       | Moonwalker                              |
+        |                 |Scarecrow                              | The Wiz                                 |
+        |                 |Agent M.J.                             | Miss Cast Away                          |
+        |                 |Agent M                                | Men in Black II                         |
+        |                 |Captain EO                             | Captain EO                              |
+        |                 |Maestro                                | Michael Jackson's Ghosts                |
+        |                 |Captain EO                             | Captain EO Promo & Pre-show             |
+        |                 |Scarecrow                              | Wiz on Down the Road                    |
+        |                 |Mayor                                  | Michael Jackson's Ghosts                |
+        |                 |Mayor Ghoul                            | Michael Jackson's Ghosts                |
+         --------------------------------------------------------------------------------------------------
+Query-Question: NFL
+
+
+
+         ---------------------------------------------------------------------------------------------------
+        |                                   National Football League (League)                               |
+         ---------------------------------------------------------------------------------------------------
+        | Name:            National Football League                                                         |
+         ---------------------------------------------------------------------------------------------------
+        | Descriptions:    The National Football League is a professional American football league that cons|
+        |                  titutes one of the four major professional sports leagues in North America. It is|
+        |                   composed of 32 teams divided equally between the National Football Conference an|
+        |                  d the American Football Conference. The highest professional level of the sport i|
+        |                  n the world, the NFL runs a 17-week regular season from the week after Labor Day |
+        |                  to the week after Christmas, with each team playing sixteen games and having one |
+        |                  bye week each season. Out of the league's 32 teams, six from each conference comp|
+        |                  ete in the NFL playoffs, a single-elimination tournament culminating in the Super|
+        |                   Bowl, played between the champions of the NFC and AFC. The champions of the Supe|
+        |                  r Bowl are awarded the Vince Lombardi Trophy. Various other awards exist to recog|
+        |                  nize individual players and coaches. Most games are played on Sunday afternoons; |
+        |                  some games are also played on Mondays and Thursdays during the regular season. Th|
+        |                  ere are games on Saturdays during the first two playoff weekends. Sometimes, ther|
+        |                  e are also Saturday games during the last few weeks of the regular season. The NF|
+        |                  L was formed on August 20, 1920, as the American Professional Football Conference|
+        |                  ; the league changed its name to the American Professional Football Association o|
+        |                  n September 17, 1920, and changed its name to the National Football League on Jun|
+        |                  e 24, 1922, after spending the 1920 and 1921 seasons as the APFA. In 1966, the NF|
+        |                  L agreed to merge with the rival American Football League, effective 1970; the fi|
+        |                  rst Super Bowl was held at the end of that same season in January 1967. Today, th|
+        |                  e NFL has the highest average attendance of any professional sports league in the|
+        |                   world and is the most popular sports league in the United States. The Super Bowl|
+        |                   is among the biggest club sporting events in the world and individual Super Bowl|
+        |                   games account for many of the most-watched television programs in American histo|
+        |                  ry. At the corporate level, the NFL is a nonprofit 501 association. The NFL's exe|
+        |                  cutive officer is the commissioner, who has broad authority in governing the leag|
+        |                  ue.                                                                              |
+         ---------------------------------------------------------------------------------------------------
+        | OfficialWebsite: http://www.nfl.com/                                                              |
+         ---------------------------------------------------------------------------------------------------
+        | Teams:           Detroit Lions                                                                    |
+        |                  Carolina Panthers                                                                |
+        |                  Arizona Cardinals                                                                |
+        |                  Baltimore Ravens                                                                 |
+        |                  Jacksonville Jaguars                                                             |
+        |                  Kansas City Chiefs                                                               |
+        |                  Denver Broncos                                                                   |
+        |                  New York Jets                                                                    |
+        |                  New York Giants                                                                  |
+        |                  Oakland Raiders                                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Sport:           American football                                                                |
+         ---------------------------------------------------------------------------------------------------
+        | Championship:    Super Bowl                                                                       |
+         ---------------------------------------------------------------------------------------------------
+Query-Question: NBA
+
+
+
+         ---------------------------------------------------------------------------------------------------
+        |                               National Basketball Association (League)                            |
+         ---------------------------------------------------------------------------------------------------
+        | Name:            National Basketball Association                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Descriptions:    The National Basketball Association is the pre-eminent men's professional basketb|
+        |                  all league in North America, and is widely considered to be the premier men's pro|
+        |                  fessional basketball league in the world. It has thirty franchised member clubs, |
+        |                  and is an active member of USA Basketball, which is recognized by FIBA as the nat|
+        |                  ional governing body for basketball in the United States. The NBA is one of the f|
+        |                  our major North American professional sports leagues. NBA players are the world's|
+        |                   best paid sportsmen, by average annual salary per player. The league was founded|
+        |                   in New York City on June 6, 1946, as the Basketball Association of America. The |
+        |                  league adopted the name National Basketball Association on August 3, 1949, after |
+        |                  absorbing the rival National Basketball League. The league's several internationa|
+        |                  l as well as individual team offices are directed out of its head offices located|
+        |                   in the Olympic Tower at 645 Fifth Avenue in New York City. NBA Entertainment and|
+        |                   NBA TV studios are directed out of offices located in Secaucus, New Jersey.     |
+         ---------------------------------------------------------------------------------------------------
+        | OfficialWebsite: http://www.nba.com/                                                              |
+         ---------------------------------------------------------------------------------------------------
+        | Teams:           Detroit Pistons                                                                  |
+        |                  Golden State Warriors                                                            |
+        |                  Los Angeles Lakers                                                               |
+        |                  Cleveland Cavaliers                                                              |
+        |                  Indiana Pacers                                                                   |
+        |                  Utah Jazz                                                                        |
+        |                  Orlando Magic                                                                    |
+        |                  Phoenix Suns                                                                     |
+        |                  Charlotte Bobcats                                                                |
+        |                  Houston Rockets                                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Sport:           Basketball                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Championship:    NBA Finals                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Slogan:          Where Amazing Happens                                                            |
+         ---------------------------------------------------------------------------------------------------
+Query-Question: NY Knicks
+
+
+
+         ---------------------------------------------------------------------------------------------------
+        |                                     New York Knicks (SportsTeam)                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Name:            New York Knicks                                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Descriptions:    The New York Knickerbockers, commonly referred to as the Knicks, are a profession|
+        |                  al basketball team based in New York City, New York. The team, established by Ned|
+        |                   Irish in 1946, was one of the founding members of the Basketball Association of |
+        |                  America, which became the NBA after merging with rival National Basketball League|
+        |                   in 1949. The team plays at Madison Square Garden in the borough of Manhattan and|
+        |                   is one of only two teams of the original National Basketball Association still l|
+        |                  ocated in its original city. The Knicks were successful during their early years |
+        |                  and were constant playoff contenders under the franchise's first head coach Joe L|
+        |                  apchick. Beginning in 1950, the Knicks made three consecutive appearances in the |
+        |                  NBA Finals, all of which were losing efforts. Lapchick resigned in 1956 and the t|
+        |                  eam subsequently began to falter. It was not until the late 1960s when Red Holzma|
+        |                  n became head coach did the Knicks begin to regain their former dominance. Holzma|
+        |                  n successfully guided the Knicks to two championship titles in 1970 and 1973. The|
+        |                   Knicks of the 1980s had mixed success that included six playoff appearances howe|
+        |                  ver, they failed to participate in the NBA Finals.                               |
+         ---------------------------------------------------------------------------------------------------
+        | Sport:           Basketball                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Locations:       New York City                                                                    |
+         ---------------------------------------------------------------------------------------------------
+        | Arena:           Madison Square Garden                                                            |
+         ---------------------------------------------------------------------------------------------------
+        | Leagues:         National Basketball Association                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Championships:   1970 NBA Finals                                                                  |
+        |                  1973 NBA Finals                                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Coaches:        |Name                    | Position                    | From/To                  |
+        |                 ----------------------------------------------------------------------------------
+        |                 |Mike Woodson            | Head coach                  | 2011-08-29 / now         |
+         --------------------------------------------------------------------------------------------------
+        | Founded:         1946                                                                             |
+         ---------------------------------------------------------------------------------------------------
+        | PlayersRoster:  |Name             | Position             | Number            | From/To            |
+        |                 ----------------------------------------------------------------------------------
+        |                 |Jamal Crawford   | Shooting guard, P... | 11                | 2004 / 2008        |
+        |                 |Bill Bradley     |                      |                   | 1967 / 1977        |
+        |                 |Patrick Ewing    | Power forward, Ce... | 33                | 1985 / 2000        |
+        |                 |Marcus Camby     | Power forward, Ce... | 23                | 1998 / 2002        |
+        |                 |Stephon Marbury  |                      |                   | 2003 / 2008        |
+        |                 |Eddy Curry       |                      |                   | 2005 / 2011        |
+        |                 |Chris Duhon      |                      |                   | 2008 / 2010        |
+        |                 |Quentin Richa... |                      |                   | 2005 / 2009        |
+        |                 |Roger Mason, Jr. |                      |                   | 2010 / 2011        |
+        |                 |Ronny Turiaf     |                      |                   | 2010 / 2011        |
+         --------------------------------------------------------------------------------------------------
+Query-Question: Miami Heat
+
+
+
+         ---------------------------------------------------------------------------------------------------
+        |                                        Miami Heat (SportsTeam)                                    |
+         ---------------------------------------------------------------------------------------------------
+        | Name:            Miami Heat                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Descriptions:    The Miami Heat are a professional basketball team based in Miami, Florida, United|
+        |                   States. The team is a member of the Southeast Division in the Eastern Conference|
+        |                   of the National Basketball Association. They play their home games at the Americ|
+        |                  an Airlines Arena in Downtown Miami. The team owner is Micky Arison, who also own|
+        |                  s cruise-ship giant Carnival Corporation. The team president and de facto general|
+        |                   manager is Pat Riley, and the head coach is Erik Spoelstra. The mascot of the te|
+        |                  am is Burnie, an anthropomorphic fireball. Formed in 1988 as one of the NBA's fou|
+        |                  r expansion franchises, the Heat have won three league championships, five confer|
+        |                  ence titles and 11 division titles. From February 3 to March 27, 2013, the Heat w|
+        |                  on 27 games in a row, the second-longest streak in NBA history. In 2013, Forbes v|
+        |                  alued the Heat at $625 million, sixth-most-valuable among NBA franchises. The Hea|
+        |                  t are not related to the Miami Floridians, an ABA team in the early 1970s, althou|
+        |                  gh the Heat have occasionally paid tribute to the older franchise by wearing a re|
+        |                  plica version of the Floridians' uniforms for the NBA's "Hardwood Classics Nights|
+        |                  " during the 2005–06 and 2011–12 seasons.                                        |
+         ---------------------------------------------------------------------------------------------------
+        | Sport:           Basketball                                                                       |
+         ---------------------------------------------------------------------------------------------------
+        | Founded:         1988                                                                             |
+         ---------------------------------------------------------------------------------------------------
+        | Locations:       Miami                                                                            |
+         ---------------------------------------------------------------------------------------------------
+        | Arena:           American Airlines Arena                                                          |
+         ---------------------------------------------------------------------------------------------------
+        | Leagues:         National Basketball Association                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Championships:   2006 NBA Finals                                                                  |
+        |                  2012 NBA Finals                                                                  |
+        |                  2013 NBA Finals                                                                  |
+         ---------------------------------------------------------------------------------------------------
+        | Coaches:        |Name                    | Position                    | From/To                  |
+        |                 ----------------------------------------------------------------------------------
+        |                 |Erik Spoelstra          | Coach                       | 2008-04 / now            |
+         --------------------------------------------------------------------------------------------------
+        | PlayersRoster:  |Name             | Position             | Number            | From/To            |
+        |                 ----------------------------------------------------------------------------------
+        |                 |Shaquille O'Neal | Center               | 32                | 2004-07-14 / 20... |
+        |                 |Earl Barron      |                      |                   | 2005 / 2008        |
+        |                 |Michael Beasley  | Power forward, Sm... | 30                | 2008-06-26 / 20... |
+        |                 |Dorell Wright    |                      |                   | 2004 / 2010-07-13  |
+        |                 |Jamaal Magloire  |                      |                   | 2008-08-30 / 20... |
+        |                 |Carlos Arroyo    |                      |                   | 2009-10-11 / 20... |
+        |                 |Quentin Richa... |                      |                   | 2009 / 2010-07-13  |
+        |                 |Shavlik Randolph | Power forward        | 42                | 2009 / 2010        |
+        |                 |Yakhouba Diawara |                      |                   | 2008-08-07 / 20... |
+        |                 |Ronny Turiaf     |                      |                   | 2012-03-21 / 20... |
+         --------------------------------------------------------------------------------------------------
+
+part2:
+./Main.py -key AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4 -f "queries2.txt" -t "question"
+Query-Question: Who created Google?
+
+
+1.  Aberjhani (As Author) created <Google eBooks Launch Today and Present Top 10 Bestselling Titles> and <10 Great Pages in My Very Own Google Plus Directory> 
+2.  Aidan Chopra (As Author) created <Google SketchUp For Dummies> and <Google SketchUp 7 for Dummies> 
+3.  Alice Schertle (As Author) created <Bill and Google Eyed Goblins> and <Bill and the google-eyed goblins> 
+4.  Billy DeBeck (As Author) created <Barney Google> 
+5.  Brad Hill (As Author) created <Google for Dummies> , <Building Your Business with Google For Dummies> , <Google Search &amp; Rescue For Dummies> and <Google-Suche Fur Dummies> 
+6.  Brian Baskin (As Author) created <Google talking> 
+7.  Bud E. Smith (As Author) created <Google Business Solutions All-in-One for Dummies> 
+8.  Chris Sherman (As Author) created <Google Power> 
+9.  David A. Vise (As Author) created <The Google Story> 
+10.  David Boles (As Author) created <Google Apps Administrator Guide> 
+11.  David Crowder (As Author) created <Google Earth For Dummies> 
+12.  David F. Gallagher (As Author) created <New Economy; A copyright dispute with the Church of Scientology is forcing Google to do some creative linking> 
+13.  David M. Geary (As Author) created <Google Web Toolkit Solutions> 
+14.  Donna Baker (As Author) created <How to Do Everything with Google Tools> 
+15.  Dorling Kindersley (As Author) created <DK Google E.encyclopedia> 
+16.  Greg Holden (As Author) created <Go Google> 
+17.  Harold Davis (As Author) created <Google advertising tools> 
+18.  Howie Jacobson (As Author) created <Google AdWords for Dummies> 
+19.  Jason Schafer (As Author) created <I Google Myself> 
+20.  Jeff Jarvis (As Author) created <What Would Google Do?> 
+21.  Jenny Holmes (As Author) created <Parenting With Google> 
+22.  Jerri L. Ledford (As Author) created <Google Analytics 2.0> 
+23.  John Battelle (As Author) created <The Search: How Google and Its Rivals Rewrote the Rules of Business and Transformed Our Culture> 
+24.  John Mueller (As Author) created <Mining Google web services> 
+25.  Johnny Long (As Author) created <Hacking con Google/ Hacking with Google> 
+26.  Jon Smith (As Author) created <Get Into Bed With Google> 
+27.  Kai-Fu Lee (As Bussinessperson) created <Google China> 
+28.  Karl Barksdale (As Author) created <Google Apps for Dummies> and <Google Sites and Chrome for Dummies> 
+29.  Larry Page (As Bussinessperson) created <Google> 
+30.  Mark Malseed (As Author) created <The Google Story> 
+31.  Martin C. Brown (As Author) created <Hacking Google Maps and Google Earth> 
+32.  Mary E. Tyler (As Author) created <Google Analytics> 
+33.  Michael Busby (As Author) created <Learn Google> 
+34.  Michael Purvis (As Author) created <Beginning Google Maps applications with PHP and Ajax> 
+35.  Michael Young (As Author) created <Google Maps mashups> 
+36.  Nicholas G. Carr (As Author) created <The Big Switch: Rewiring the World, from Edison to Google> and <Is Google Making Us Stupid?> 
+37.  Perry Marshall (As Author) created <Ultimate Guide to Google AdWords> 
+38.  Preston Gralla (As Author) created <Google Search and Tools in a Snap> 
+39.  Rael Dornfest (As Author) created <Google Hacks> and <Google: The Missing Manual> 
+40.  Randall E. Stross (As Author) created <Planet Google> 
+41.  Robbie Vanbrabant (As Author) created <Google Guice> 
+42.  Ryan C. Williams (As Author) created <Google Business Solutions All-in-One for Dummies> 
+43.  Ryan Teeter (As Author) created <Google Apps for Dummies> and <Google Sites and Chrome for Dummies> 
+44.  Sara Gilbert (As Author) created <The story of Google> 
+45.  Sarah Milstein (As Author) created <Google: The Missing Manual> 
+46.  Sergey Brin (As Bussinessperson) created <Google> 
+47.  Shelley O'Hara (As Author) created <Easy Google> 
+48.  Sterling Udell (As Author) created <Beginning Google Maps mashups with Mapplets, KML, and GeoRSS> 
+49.  Susan Gunelius (As Author) created <Google Blogger for Dummies> 
+50.  Tara Brabazon (As Author) created <The University of Google> 
+51.  Tara Calishain (As Author) created <Google pocket guide> and <Google Hacks> 
+52.  Ted Coombs (As Author) created <Google Power Tools Bible> 
+53.  Timesaver Books (As Author) created <Google in 30 Pages or Less> 
+
+
+
+
+Query-Question: Who created Lord of the Rings?
+
+
+1.  Brian Sibley (As Author) created <The Lord of the Rings> 
+2.  Christina Scull (As Author) created <The Lord of the Rings: A Reader's Companion> 
+3.  Christopher Smith (As Author) created <The Lord of the Rings: Weapons and Warfare> 
+4.  David Brawn (As Author) created <The Lord of the rings> 
+5.  David Colbert (As Author) created <The Magical Worlds of the Lord of the Rings: The Amazing Myths, Legends, and Facts Behind the Masterpiece> 
+6.  Fleming Rutledge (As Author) created <The Battle for Middle-Earth: Tolkien's Divine Design in "the Lord of the Rings"> 
+7.  Gary Russell (As Author) created <The "Lord of the Rings" Official Stage Companion> 
+8.  Howard Shore (As Author) created <Lord of the Rings Instrumental Solos Viola Book> 
+9.  J. R. R. Tolkien (As Author) created <The Lord of the Rings> , <Ring Goes South Book Lord of the Rings> , <Appendices Final Book Lord of the Rings> , <Ring Sets Out Book Lord of the Rings> and <The Hobbit and the Lord of the Rings> 
+10.  Jane Chance (As Author) created <The lord of the rings> 
+11.  Jane Johnson (As Author) created <The Lord of the Rings: The Two Towers Visual Companion> and <The Lord of The Rings: The Complete Visual Companion> 
+12.  Jim Smith (As Author) created <The lord of the rings> 
+13.  Kurt D. Bruner (As Author) created <Finding God in the Lord of the Rings> 
+14.  Lin Carter (As Author) created <Tolkien: A Look Behind "The Lord of the Rings"> 
+15.  Lynnette R. Porter (As Author) created <Unsung Heroes of The Lord of the Rings : From the Page to the Screen> 
+16.  Mario Govia (As Author) created <The Lord of the rings> 
+17.  Mark Eddy Smith (As Author) created <Tolkien's Ordinary Virtues : Exploring the Spiritual Themes of the Lord of the Rings> and <A Closer Look at "The Lord of the Rings"> 
+18.  Martin Barker (As Author) created <Watching the Lord of the rings> 
+19.  Matthew Warchus (As Author) created <Lord of the Rings> 
+20.  Neil D. Isaacs (As Author) created <Understanding the Lord of the Rings: The Best of Tolkien Criticism> 
+21.  Rayner Unwin (As Author) created <The making of The lord of the rings> 
+22.  Reiner Knizia (As Author) created <Lord of the Rings Friends and Foes> 
+23.  Richard Abanes (As Author) created <Harry Potter, Narnia, and The lord of the rings> 
+24.  Robert Eaglestone (As Author) created <Reading the Lord of the Rings> 
+25.  Rose A. Zimbardo (As Author) created <Understanding the Lord of the Rings: The Best of Tolkien Criticism> 
+26.  Sandra Miesel (As Author) created <Myth, Symbol &amp; religion in The lord of the rings> 
+27.  Shaun McKenna (As Author) created <Lord of the Rings> 
+28.  Steven Schwartz (As Author) created <The Lord of the Rings Official Game Secrets> 
+29.  Stratford Caldecott (As Author) created <Power of the Ring : The Spiritual Vision of the Lord of the Rings> 
+30.  Terry Donaldson (As Author) created <The Lord of the rings tarot> 
+31.  Wayne G. Hammond (As Author) created <The Lord of the Rings: A Reader's Companion> 
+
+
+
+
+Query-Question: Who created Microsoft?
+
+
+1.  A. Nandy (As Author) created <Practical Numerical Analysis using Microsoft Excel> 
+2.  Alastair Day (As Author) created <Mastering Financial Mathematics in Microsoft Excel> 
+3.  Ana M. Villar (As Author) created <Microsoft Word> 
+4.  Andy Rathbone (As Author) created <MORE Microsoft Windows Me for Dummies> , <Microsoft Windows Me Millennium Edition for dummies> and <Microsoft Windows 2000 Millennium Edition for Dummies, Pocket Edition> 
+5.  Ann Shaffer (As Author) created <New Perspectives on Microsoft Office 2007, First Course, Windows Vista Edition> and <Explore!  Microsoft Word 2000--Brief> 
+6.  Barry Gerber (As Author) created <Mastering Microsoft Exchange Server 2003> 
+7.  Ben Curry (As Author) created <Microsoft Office SharePoint Server 2007 Best Practices> 
+8.  Beverly Dretzke (As Author) created <Statistics with Microsoft Excel> 
+9.  Bill Gates (As Bussinessperson) created <Microsoft Corporation> and <Microsoft Research> 
+10.  Bill Jelen (As Author) created <Excel, Macros y VBA / VBA and Macros for Microsoft Excel> , <Charts and Graphs for Microsoft Office Excel 2007> and <Guerilla data analysis using Microsoft Excel> 
+11.  Bryan Pfaffenberger (As Author) created <Running Microsoft Internet Explorer 5> , <Libro Oficial de Microsoft Internet Explorer> , <Official Microsoft Internet Explorer 4 book> , <Microsoft Windows 95 Internet kit> , <The offical Microsoft Internet Explorer book> and <Dynamics of Microsoft Word> 
+12.  Casey D. Doyle (As Author) created <Microsoft Press Computer Dictionary> 
+13.  Charlie Russel (As Author) created <Running Microsoft Windows NT server 4.0> 
+14.  Christine Solomon (As Author) created <Developing applications with Microsoft Office> and <Microsoft Office 97 developer's handbook> 
+15.  Clara Varela (As Author) created <Microsoft Access 2003 Nociones Basicas> and <Microsoft Access 2003 Nivel Intermedio> 
+16.  Dan Gookin (As Author) created <How to use Microsoft Excel 2000> and <The Microsoft guide to managing memory with DOS 5> 
+17.  David B. Yoffie (As Author) created <Competing on Internet Time: Lessons from Netscape and Its Battle with Microsoft> 
+18.  David Beskeen (As Author) created <Microsoft Office 2007 Illustrated Introductory, Windows XP Edition> 
+19.  David Blatner (As Author) created <Microsoft Expression Design for Windows> 
+20.  David Bragg (As Author) created <Microsoft Word 98 for the Mac> 
+21.  David D. Busch (As Author) created <Microsoft Works Suite 99 at a glance> 
+22.  David Karlins (As Author) created <Teach yourself Microsoft FrontPage 98 in a week> , <Wild Web Graphics With Microsoft Image Composer> and <Microsoft Works for Kids &amp; Parents> 
+23.  David Sceppa (As Author) created <Microsoft ADO.NET> 
+24.  Dean Takahashi (As Author) created <Opening the Xbox: Inside Microsoft's Plan to Unleash an Entertainment Revolution> 
+25.  Deborah Kurata (As Author) created <Doing objects in Microsoft Visual Basic 5.0> and <Doing objects in Microsoft Visual Basic 4.0> 
+26.  Diane Zak (As Author) created <Programming with Microsoft Visual Basic .NET> and <Microsoft Visual Basic 2005> 
+27.  Don Benage (As Author) created <Using Microsoft Visual studio> 
+28.  Dylan G. Penal (As Author) created <1 Way Microsoft Marches Strong> 
+29.  Ed Bott (As Author) created <La Biblia de Microsoft Office 2003> , <Faster Smarter Microsoft Windows XP> , <Office Max - Using Microsoft Office 4> and <Practical Microsoft Windows 2000 Professional> 
+30.  Ed Tittel (As Author) created <Microsoft Windows NT 4 expert companion> , <Microsoft certified systems engineer.> and <Guide to Microsoft Windows 2000 Core Technologies> 
+31.  Ed Wilson (As Author) created <Microsoft Windows PowerShell step by step> 
+32.  Elaine J Marmel (As Author) created <The essential Microsoft Word 2000 book> , <Troubleshooting Microsoft Office XP> , <Easy Microsoft Excel 97> and <Microsoft Office Project 2007 All-in-One Desk Reference for Dummies> 
+33.  Faithe Wempen (As Author) created <Special Edition Using Microsoft Office Word 2007> , <Using Microsoft Home Essentials 98> , <Libro de Microsoft PowerPoint 2000 - Con Un CD-ROM> , <DDC Learning Microsoft Office XP Advanced Skills> , <Microsoft Access 2002 Fast &amp; Easy> , <DDC Learning Microsoft Publisher 2002> , <Practical Microsoft Windows 98> , <DDC Learning Microsoft Access 2002> and <Microsoft Office 2007 for Seniors for Dummies> 
+34.  Fergal Grimes (As Author) created <Microsoft .Net for programmers> 
+35.  Fernando Rodriguez (As Author) created <Microsoft Excel 2003> 
+36.  Gary B. Shelly (As Author) created <Microsoft office> and <School Edition of Microsoft Office 2003> 
+37.  George Shepherd (As Author) created <Manuel de référence Microsoft Visual C++ .NET> 
+38.  Helen Feddema (As Author) created <Microsoft Access Version 2002 Inside Out> 
+39.  Inc. Systems (As Author) created <Bt-Microsoft Windo Hbk> 
+40.  James Michael Stewart (As Author) created <Guide to Microsoft Windows 2000 Core Technologies> 
+41.  Jan Ray (As Author) created <Microsoft Excel Simple Projects> 
+42.  Jason Gerend (As Author) created <Faster Smarter Microsoft Windows 98> 
+43.  Jerry Funk (As Author) created <Learn Microsoft Works in a day> 
+44.  Joan Preppernau (As Author) created <Microsoft  Windows Vista Step by Step> 
+45.  John Wood (As Author) created <Leaving Microsoft to Change the World> 
+46.  Joseph J. Adamski (As Author) created <New Perspectives on Microsoft Office Access 2007, Comprehensive> , <New Perspectives on Microsoft Office Access 2007, Introductory> , <Comprehensive Microsoft Access 2.0 for Windows :> , <E-Course Microsoft Office 97> and <Introductory Microsoft Access 1.1 for Windows> 
+47.  Judy Mardar (As Author) created <Microsoft Office Excel 2003> and <Welcome To Microsoft Excel 2003> 
+48.  Julio M. Gonzalez (As Author) created <Microsoft Powerpoint> 
+49.  June Jamrich Parsons (As Author) created <New Perspectives on Microsoft Office Excel 2007, Comprehensive> , <New Perspectives on Microsoft Office Excel 2007, Introductory> , <A guide to Microsoft Windows 3.1> , <An introduction to Microsoft Windows 3.1> and <Brief Microsoft Windows 3.1 and DOS> 
+50.  KOTABE (As Author) created <Global with Microsoft Encarta 98 Set> 
+51.  Kai-Fu Lee (As Bussinessperson) created <Microsoft Research Asia> 
+52.  Kate Gregory (As Author) created <Microsoft Visual C++ .NET 2003 Kick Start> and <Edicion Especial Microsoft Visual C++ 6> 
+53.  Kate J Chase (As Author) created <A Guide to Microsoft Office 2000> 
+54.  Kathy Short (As Author) created <Introduction to Microsoft Word and Excel> 
+55.  Kenneth Spencer (As Author) created <Microsoft Windows 2000 Server - Administracion> and <Cliente Servidor Con Microsoft Visual Basic> 
+56.  Kleber Stephenson (As Author) created <Microsoft Office 2003 killertips> and <Office 2003 / Microsoft Office 2003> 
+57.  Kris Jamsa (As Author) created <User's guide to Microsoft Windows 3.1> , <Microsoft QuickPascal programming> and <Fastback Plus Microsoft Quick Reference> 
+58.  Larry Lozuk (As Author) created <West's Essentials of Microsoft Word for> , <Essentials of Microsoft Word for Windows> , <Understanding and using Microsoft Word for Windows> and <Intermediate Microsoft Word for Windows 2.0> 
+59.  Laura Lemay (As Author) created <Microsoft FrontPage> 
+60.  Mark L. Chambers (As Author) created <Microsoft Office v.X for Mac> 
+61.  Marty Matthews (As Author) created <Microsoft Office Outlook 2007 QuickSteps> 
+62.  Mary Jo Foley (As Author) created <Microsoft 2.0: How Microsoft Plans to Stay Relevant in the Post-Gates Era> 
+63.  Melanie Gass (As Author) created <I Survived Microsoft Office 2007> 
+64.  Michael Halvorson (As Author) created <Microsoft Visual Basic 2008 Step by Step> , <Integrating Microsoft Office XP Illustrated Brief> , <Microsoft Office 2003 Inside Out> , <Running Guia Completa de Microsoft Office> , <Learn Microsoft Visual Basic 6.0 Now> and <Microsoft Office 2000 Premium au quotidien> 
+65.  Michael Linenberger (As Author) created <Total Workday Control Using Microsoft Outlook, 2nd Ed.> 
+66.  Michael R. Middleton (As Author) created <Data Analysis Using Microsoft Excel> 
+67.  Microsoft Press (As Author) created <Microsoft Press Computer Dictionary, 4th Edition> 
+68.  Nabajyoti Barkakati (As Author) created <Microsoft C/C++ 7 developer's guide> 
+69.  Nancy Lewis (As Author) created <Easy Microsoft Excel 2003 (2nd Edition)> , <Easy Microsoft Office X> and <Microsoft Windows 2000 Professional Quick Reference> 
+70.  Nathan Myhrvold (As Bussinessperson) created <Microsoft Research> 
+71.  Nevada Learning Series (As Author) created <Microsoft Excel 97 Quick Reference Guide> 
+72.  Paul Allen (As Bussinessperson) created <Microsoft Corporation> 
+73.  Paul Cornell (As Author) created <Accessing and Analyzing Data with Microsoft Excel> 
+74.  Paul Wray (As Author) created <Computer Literacy With Microsoft Office 2000> and <DDC Learning Microsoft Access 2002> 
+75.  Pawan K. Bhardwaj (As Author) created <MCTS 70-620 Microsoft Windows Vista> 
+76.  Peter Mason (As Author) created <Five-minute Microsoft Windows> and <Word processing with Microsoft Word for Windows> 
+77.  Qwiz (As Author) created <Trng TD Mac MS Wrd 6.0-Qwized Microsoft> and <Trng TD MS Wn 95 F/Wn 3.1-Qwiz Microsoft> 
+78.  Ralph Ruby (As Author) created <Microsoft works applications> 
+79.  Randall E. Stross (As Author) created <The Microsoft Way: The Real Story of How the Company Outsmarts Its Competition> 
+80.  Rebecca M. Riordan (As Author) created <Microsoft ADO.NET Step by Step> 
+81.  Richard A. McMahon (As Author) created <Microsoft Security Design Windows 2000> 
+82.  Richard Rashid (As Bussinessperson) created <Microsoft Research> 
+83.  Robert A. Radcliffe (As Author) created <Data handling utilities in Microsoft C> 
+84.  Robert Bobel (As Author) created <Active Introduction to Microsoft Windows 98> 
+85.  Robert D. Schneider (As Author) created <Microsoft SQL Server 2008 All-in-One Desk Reference for Dummies> 
+86.  Robert Lafore (As Author) created <Object-oriented programming in Microsoft C++> 
+87.  Robert Machalow (As Author) created <Using Microsoft Works> and <Using Microsoft Excel> 
+88.  Roi Facal (As Author) created <Microsoft Powerpoint 2003 Nociones Basicas> 
+89.  Ron Mansfield (As Author) created <Microsoft Office for the Mac Compact Guide> , <The Mac book of Microsoft Word 5> , <Working in Microsoft office> and <The compact guide to Microsoft Office> 
+90.  Roy Ageloff (As Author) created <Microsoft Excel 7 for Windows 95 - Advanced> 
+91.  Sharon Crawford (As Author) created <Faster Smarter Microsoft Windows 98> 
+92.  Shelley Gaskin (As Author) created <GO! with Microsoft Office 2007 Introductory> 
+93.  Sheryl A. Sorby (As Author) created <Microsoft Word 6.0 for Engineers> 
+94.  Sonia Silva (As Author) created <Microsoft Outlook 2003> 
+95.  Stephen C. Solosky (As Author) created <Microsoft Excel> and <Microsoft Access> 
+96.  Stephen Hawking (As Bussinessperson) created <Microsoft Research> 
+97.  Stephen L. Nelson (As Author) created <MBA's guide to Microsoft Excel 2000> , <Microsoft Excel 97 Field Guide> , <Microsoft Money 98 at a glance> , <Microsoft pocket guide to Microsoft Word 2000> , <Microsoft FrontPage 2000 at a glance> , <Microsoft PowerPoint 97 field guide> , <Microsoft Help Desk for Microsoft Windows Nt Workstation 4.0> , <Ask the expert guide to Microsoft Money 2001> , <Microsoft Access 97 field guide> , <Microsoft Money 99 at a glance> , <Microsoft Windows 98 field guide> , <Microsoft Outlook 2000 At a Glance> , <Microsoft Exchange 5.0 field guide> , <Microsoft Outlook 98 field guide> , <Microsoft Outlook 97 at a glance> , <Field guide to Microsoft Windows 95> , <Microsoft Internet Explorer 4 field guide> and <Microsoft Word 97 field guide> 
+98.  Steven Holzner (As Author) created <Microsoft Visual C# .NET 2003 kick start> and <Special Edition Using Microsoft(R)  Office Visio 2007> 
+99.  Sue Mosher (As Author) created <Microsoft Outlook 2007 Programming> 
+100.  Syngress Publishing (As Author) created <MCSE Microsoft TCP/IP on Windows NT 4.0 Study Guide> 
+101.  Thomas J. Cashman (As Author) created <Microsoft Office 2003> and <School Edition of Microsoft Office 2003> 
+102.  Thomas Rizzo (As Author) created <Professional Microsoft SharePoint search> and <Programacion Con Microsoft Outlook Y Exchange> 
+103.  Tonya Engst (As Author) created <Microsoft Office 4.2 Survival Guide for Macintosh> 
+104.  Vanessa Williams (As Author) created <Microsoft SharePoint 2007 For Dummies> and <Microsoft SharePoint 2003 for Dummies> 
+105.  William R. Pasewark (As Author) created <Microsoft Office 2000> 
+106.  William R. Trotter (As Author) created <Microsoft close combat - a bridge too far> 
+
+
+
+
+Query-Question: Who created Romeo and Juliet?
+
+
+1.  Adolph Caso (As Author) created <Romeo and Juliet: Original Text of> 
+2.  Andrew Halliday (As Author) created <Romeo and Juliet travestie, or, The cup of cold poison> 
+3.  Ben Power (As Author) created <Romeo and Juliet> 
+4.  Bruce Coville (As Author) created <William Shakespeare's Romeo and Juliet> 
+5.  Charles Gounod (As Author) created <Romeo and Juliet> 
+6.  David Garrick (As Author) created <Romeo and Juliet> 
+7.  Edward Loomis (As Author) created <Romeo and Juliet in L.A> 
+8.  Frederick Delius (As Author) created <A village Romeo and Juliet> 
+9.  Gail Herman (As Author) created <Everybody Hates Romeo and Juliet> 
+10.  Gareth Hinds (As Author) created <Romeo and Juliet> 
+11.  George Lyman Kittredge (As Author) created <New light on Romeo and Juliet> 
+12.  Gottfried Keller (As Author) created <A village Romeo and Juliet> 
+13.  H. B. Charlton (As Author) created <Romeo and Juliet as an experimental tragedy> 
+14.  Harley Granville-Barker (As Author) created <Romeo and Juliet> 
+15.  Harold Bloom (As Author) created <UC Romeo and Juliet> 
+16.  Helen Morris (As Author) created <Romeo and Juliet by William Shakespeare> 
+17.  James Cunningham (As Author) created <A study of the 1980's criticism of Shakespeare's tragedies with new readings of Romeo and Juliet, Titus Andronicus,and Richard III> 
+18.  John Mahoney (As Author) created <Romeo and Juliet, William Shakespeare> 
+19.  Judith Arnold (As Author) created <Just Like Romeo and Juliet> 
+20.  Jules Tasca (As Author) created <Romeo and Juliet are lovers> 
+21.  Leo Fredricks (As Author) created <Romeo and Juliet jig jig> 
+22.  Lolita Chakrabarti (As Author) created <Romeo and Juliet> 
+23.  Lukas Erne (As Author) created <The First Quarto of Romeo and Juliet> 
+24.  Margaret Early (As Author) created <The most excellent and lamentable tragedy of Romeo and Juliet> 
+25.  Mark Morris (As Author) created <Romeo and Juliet Teacher's Resource Book> 
+26.  Natalie Bishop (As Author) created <Love Like Romeo And Juliet> 
+27.  Norris Houghton (As Author) created <Romeo and Juliet and West Side Story> 
+28.  Olin H. Moore (As Author) created <The legend of Romeo and Juliet> 
+29.  Peter Holding (As Author) created <Romeo and Juliet> 
+30.  Rebecca Lisle (As Author) created <Romeo and Juliet> 
+31.  Rex Gibson (As Author) created <Cambridge Student Guide to Romeo and Juliet> 
+32.  Russell Jackson (As Author) created <Romeo and Juliet - Arden Shakespeare> 
+33.  Russell L. Erickson (As Author) created <The relation between quarto 1 and quarto 2 of Romeo and Juliet> 
+34.  Sergei Prokofiev (As Author) created <Romeo and Juliet Suite No. 2, Op. 64c> , <Danse populaire from Romeo and Juliet> , <Scene, and Mercutio, from Romeo and Juliet, ballet> and <Romeo and Juliet Suite No. 3, Op. 101> 
+35.  SparkNotes (As Author) created <Romeo and Juliet (No Fear Shakespeare)> 
+36.  Theophilus Cibber (As Author) created <Romeo and Juliet> 
+37.  William Shakespeare (As Author) created <Romeo and Juliet> , <The First Quarto of Romeo and Juliet> and <An excellent conceited tragedie of Romeo and Juliet> 
+
+
+
+
+#end
