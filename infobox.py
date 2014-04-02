@@ -4,7 +4,8 @@ import urllib
 import re
 
 
-api_key = open(".api_key").read().strip()
+#api_key = open(".api_key").read().strip()
+api_key = "AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4"
 freebase_entity_types = {
 	'/type/object': 'Basic',
 	'/people/person': 'Person',
@@ -86,14 +87,31 @@ def print_headline(name, list):
 
 
 def print_description(content):
-	pass
+	# TODO by now we only print the first description
+	#content = content[0].encode("utf8", "ignore")
+	content = content[0]
+	temp = ''
+	for i in range(len(content)):
+		if content[i] == '\n':
+			temp += ' '
+		else:
+			temp += content[i]
+	content = temp
+
+	upline = (' ' * 9) + ('-' * 99)
+	print (' ' * 8) + '| '  + 'Descriptions:' + (' ' * 3),
+	while len(content) > 81:
+		print content[0:81] + '|'
+		content = content[81:]
+		print (' ' * 8) + '| ' + (' ' * 16),
+	print content[:] + (' ' * (81 - len(content))) + '|'
+	print upline
 	return
 
 
 def print_list(name, list):
 	upline = (' ' * 9) + ('-' * 99)
 	print (' ' * 8) + '| ' + name + ':' + (' ' * (15 - len(name))),
-	# content maximum 80
 	if len(list[0]) > 80:
 		list[0] = list[0][0:77] + '...'
 	print list[0] + (' ' * (81 - len(list[0]))) + '|'
@@ -114,8 +132,8 @@ def print_table(name, table):
 	#'Films': [[character, film],[],[],[],...] (all strings; if empty '' will be returned)
 	#'Leadership': [[organization, role, title, time],[],[],[],...] (all strings; if sth is empty, '' returned)
 	#'Board Member': [[organization, role, title, time],[],[],[],...] (all strings; if sth is empty, '' returned)
-	#'Coaches': [[name, position, from, to],[],[],[],...] (all strings; if sth is empty, '' returned)
-	#'PlayersRoster': [[name, position, number, from, to],[],[],[],...] (all strings; if sth is empty, '' returned)
+	#'Coaches': [[name, position, time],[],[],[],...] (all strings; if sth is empty, '' returned)
+	#'PlayersRoster': [[name, position, number, time],[],[],[],...] (all strings; if sth is empty, '' returned)
 	upline = (" " * 9) + ("-" * 98)
 	if name == 'Films':
 		print '        | Films:         ',
@@ -170,12 +188,6 @@ def print_table(name, table):
 		print ('-' * 82)
 		for item in table:
 			print (' ' * 8) + '|' + (' ' * 16),
-			if item[2] == '':
-				pass
-			elif item[3] == '':
-				item[2] = item[2] + ' / now'
-			else:
-				item[2] = item[2] + ' / ' + item[3]
 			if len(item[0]) > 23:
 				item[0] = item[0][0:20] + '...'
 			if len(item[1]) > 27:
@@ -190,12 +202,6 @@ def print_table(name, table):
 		print ('-' * 82)
 		for item in table:
 			print (' ' * 8) + '|' + (' ' * 16),
-			if item[3] == '':
-				pass
-			elif item[4] == '':
-				item[3] = item[3] + ' / now'
-			else:
-				item[3] = item[3] + ' / ' + item[4]
 			if len(item[0]) > 16:
 				item[0] = item[0][0:13] + '...'
 			if len(item[1]) > 20:
@@ -209,7 +215,7 @@ def print_table(name, table):
 	return
 
 
-def print_hash(table):
+def print_hash(table, type_of_entities):
 	#----------------- extract type of entity  of interests here -----------------
 	class_list = []
 	for category in ['Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
@@ -234,7 +240,6 @@ def print_hash(table):
 		type_of_entities['Basic']['/common/topic'].remove('/common/topic/official_website')
 	#----------------------------------------------------------------------------
 
-		
 
 	#================== formalize the death information ===================
 	if '/people/deceased_person/place_of_death' in table or '/people/deceased_person/date_of_death' in table or '/people/deceased_person/cause_of_death' in table:
@@ -278,6 +283,13 @@ def print_hash(table):
 			table['/people/deceased_person/death'] = [death]
 	#print table['/people/deceased_person/death']
 
+	# the order for the six higher categories # TODO should sort the 'name', 'description' and 'officialwebsite'?
+	class_temp = ['Basic', 'Person', 'Author', 'BusinessPerson', 'Actor', 'League', 'SportsTeam']
+	temp = []
+	for i in range(len(class_temp)):
+		if class_temp[i] in class_list:
+			temp.append(class_temp[i])
+	class_list = temp
 
 	for key in class_list:
 		for key1 in type_of_entities[key]:
@@ -293,7 +305,6 @@ def print_hash(table):
 				#for item in table[key2]:
 				#	print item
 				#print ''
-				# TODO by what order we output finally ?
 	return
 
 
@@ -375,7 +386,7 @@ def supported(mid):
 	return (result_extracted, type_of_entities, type_list)
 
 
-def result_concat(table, url): # e.g.   cause_of_death: Cardiac arrest, Homicide
+def result_concat(table, url): # e.g. cause_of_death: Cardiac arrest, Homicide
 	try:
 		temp = []
 		for pos in table[url]['values']:
@@ -388,9 +399,15 @@ def result_concat(table, url): # e.g.   cause_of_death: Cardiac arrest, Homicide
 		result = ''
 	return result
 
-def result_list():
-	pass
-	return	
+
+def result_list(table, url):
+	result= []
+	for item1 in table[url]:
+		try:
+			result.append(item1['text'])
+		except:
+			continue
+	return result
 
 
 def getentity(result_extracted, type_of_entities, type_list):
@@ -399,24 +416,10 @@ def getentity(result_extracted, type_of_entities, type_list):
 		result[item] = []
 
 		##### Person #####
-		if item == '/type/object/name':
-			for item1 in result_extracted[item]:
-				result[item].append(item1['text'])
-		if item == '/people/person/date_of_birth':
-			for item1 in result_extracted[item]:
-				result[item].append(item1['text'])
-		if item == '/people/person/place_of_birth':
-			for item1 in result_extracted[item]:
-				result[item].append(item1['text'])
-		if item == '/people/deceased_person/place_of_death':
-			for item1 in result_extracted[item]:
-				result[item].append(item1['text'])
-		if item == '/people/deceased_person/date_of_death':
-			for item1 in result_extracted[item]:
-				result[item].append(item1['text'])
+		if item in ['/type/object/name', '/people/person/date_of_birth', '/people/person/place_of_birth', '/people/deceased_person/place_of_death', '/people/deceased_person/date_of_death']:
+			result[item] = result_list(result_extracted, item)
 		if item == '/people/deceased_person/cause_of_death':
-			for item1 in result_extracted[item]:
-				result[item].append(item1['text'])
+			result[item] = result_list(result_extracted, item)
 			result[item] = [', '.join(result[item])]
 		if item == '/people/person/sibling_s':
 			for item1 in result_extracted[item]: # each item1 here is a sibling
@@ -428,9 +431,9 @@ def getentity(result_extracted, type_of_entities, type_list):
 			for item1 in result_extracted[item]: # each item1 here is a spouse
 				property = item1['property']
 				spouse = result_concat(property, '/people/marriage/spouse')
-				begin = result_concat(property, '/people/marriage/begin')
-				end  = result_concat(property, '/people/marriage/end ')
-				location = result_concat(property, '/people/marriage/location')
+				begin = result_concat(property, '/people/marriage/from')
+				end  = result_concat(property, '/people/marriage/to')
+				location = result_concat(property, '/people/marriage/location_of_ceremony')
 				# let each of the elements be a printable spouse
 				# spouse + ' (' + begin + ' - ' + end + ') @ ' + location
 				# TODO do more testing here?
@@ -447,32 +450,11 @@ def getentity(result_extracted, type_of_entities, type_list):
 				result[item].append(item1['value'])
 
 		##### Author #####
-		if item == '/book/author/works_written': # has some problems about the redundency
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/book/book_subject/works':
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/influence/influence_node/influenced':
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/influence/influence_node/influenced_by':
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
+		if item in ['/book/author/works_written', '/book/book_subject/works', '/influence/influence_node/influenced', '/influence/influence_node/influenced_by']:
+			result[item] = result_list(result_extracted, item)
 
 		##### Actor #####
+		# TODO "/tv/tv_actor"
 		if item == '/film/actor/film':
 		# return format: [[character, film],[],[],[],...] (all strings; if empty '' will be returned)
 			for item1 in result_extracted[item]: # each item1 here is a film with actor
@@ -516,41 +498,11 @@ def getentity(result_extracted, type_of_entities, type_list):
 				result[item].append([organization, role, title, time])
 		if item == '/organization/organization_founder/organizations_founded':
 		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
+			result[item] = result_list(result_extracted, item)
 
 		##### League #####
-		if item == '/sports/sports_league/championship':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/sports/sports_league/sport':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/organization/organization/slogan':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/common/topic/official_website':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
+		if item in ['/sports/sports_league/championship', '/sports/sports_league/sport', '/organization/organization/slogan', '/common/topic/official_website']:
+			result[item] = result_list(result_extracted, item)
 		if item == '/sports/sports_league/teams':
 		# return format: [string1, string2, string3, ...]
 			for item1 in result_extracted[item]:
@@ -560,106 +512,45 @@ def getentity(result_extracted, type_of_entities, type_list):
 				result[item].append(team)
 
 		##### SportsTeam #####
-		if item == '/sports/sports_team/sport':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/sports/sports_team/arena_stadium':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-		if item == '/sports/sports_team/championships':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
-
-
-
-		# TODO TODO
-
-
-
+		if item in ['/sports/sports_team/sport', '/sports/sports_team/arena_stadium', '/sports/sports_team/championships', '/sports/sports_team/founded', '/sports/sports_team/location']:
+			result[item] = result_list(result_extracted, item)
 		if item == '/sports/sports_team/coaches':
 		# return format: [[name, position, from, to],[],[],[],...] (all strings; if sth is empty, '' returned)
 			for item1 in result_extracted[item]: # each item1 here is a boardmembership
 				property = item1['property'] # we should extract each item in property
-				try:
-					name = property['/sports/sports_team_coach_tenure/coach']['values'][0]['text']
-				except:
-					name = ''
-				try:
-					position = property['/sports/sports_team_coach_tenure/position']['values'][0]['text']
-				except:
-					position = ''
-				try:
-					begin = property['/sports/sports_team_coach_tenure/from']['values'][0]['text']
-				except:
-					begin = ''
-				try:
-					end = property['/sports/sports_team_coach_tenure/to']['values'][0]['text']
-				except:
-					end = ''
-				result[item].append([name, position, begin, end])
-		if item == '/sports/sports_team/founded':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
+				name = result_concat(property, '/sports/sports_team_coach_tenure/coach')
+				position = result_concat(property, '/sports/sports_team_coach_tenure/position')
+				begin = result_concat(property, '/sports/sports_team_coach_tenure/from')
+				end = result_concat(property, '/sports/sports_team_coach_tenure/to')
+				if begin == '':
+					time = begin
+				elif end == '':
+					time = begin + ' / now'
+				else:
+					time = begin + ' / ' + end
+				result[item].append([name, position, time])
 		if item == '/sports/sports_team/league':
 		# return format: [string1, string2, string3, ...]
 			for item1 in result_extracted[item]: # each item1 here is a league
 				property = item1['property'] # we should extract each item in property
-				try:
-					league = property['/sports/sports_league_participation/league']['values'][0]['text']
-				except:
-					league = ''
+				league = result_concat(property, '/sports/sports_league_participation/league')
 				result[item].append(league)
-		if item == '/sports/sports_team/location':
-		# return format: [string1, string2, string3, ...]
-			for item1 in result_extracted[item]:
-				try:
-					result[item].append(item1['text'])
-				except:
-					continue
 		if item == '/sports/sports_team/roster':
-		# return format: [[name, position, number, from, to],[],[],[],...] (all strings; if sth is empty, '' returned)
+		# return format: [[name, position, number, time],[],[],[],...] (all strings; if sth is empty, '' returned)
 			for item1 in result_extracted[item]: # each item1 here is a roster
 				property = item1['property'] # we should extract each item in property
-				try:
-					name = property['/sports/sports_team_roster/player']['values'][0]['text']
-				except:
-					name = ''
-				try:
-					temp = [] # TODO for everyone we should always do this!!!
-					for pos in property['/sports/sports_team_roster/position']['values']:
-						temp.append(pos['text'])
-					position = ', '.join(temp)
-				except:
-					position = ''
-				try:
-					number = property['/sports/sports_team_roster/number']['values'][0]['text']
-				except:
-					number = ''
-				try:
-					begin = property['/sports/sports_team_roster/from']['values'][0]['text']
-				except:
-					begin = ''
-				try:
-					end = property['/sports/sports_team_roster/to']['values'][0]['text']
-				except:
-					end = ''
-				result[item].append([name, position, number, begin, end])
+				name = result_concat(property, '/sports/sports_team_roster/player')
+				position = result_concat(property, '/sports/sports_team_roster/position')
+				number = result_concat(property, '/sports/sports_team_roster/number')
+				begin = result_concat(property, '/sports/sports_team_roster/from')
+				end = result_concat(property, '/sports/sports_team_roster/to')
+				if begin == '':
+					time = begin
+				elif end == '':
+					time = begin + ' / now'
+				else:
+					time = begin + ' / ' + end
+				result[item].append([name, position, number, time])
 	return result
 
 
@@ -668,14 +559,15 @@ def infobox(query):
 
 	# optional
 	#print("Please input query:")
-        #query = raw_input()
-	
+	#query = raw_input()
+
 	#print "Processing.. Please wait..."
 	#query = 'NY Knicks'
 	#query = 'Jackson'
 	#query = 'NBA'
-	#query = "Itsik Pe'er"
 
+	#query = "Itsik Pe'er"
+	#query = "bill gates"
 	service_url = 'https://www.googleapis.com/freebase/v1/search'
 	params = {
 		'query': query,
@@ -701,8 +593,8 @@ def infobox(query):
 			break
 	
 	if NO_RESULT:
-		print "No results for all the mids. Program terminate."
+		print "No results for query \"%s\". Program terminate." %(query)
 	else:
 		entity = getentity(result_extracted, type_of_entities, type_list)
 		# for entity, key is the freebase entity name, and value is the values for that entity, which is a string list
-		print_hash(entity)
+		print_hash(entity, type_of_entities)

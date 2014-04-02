@@ -1,7 +1,8 @@
 import sys
+import infobox
 
 from Part2 import *
-# from infobox import *
+
 
 
 if __name__ == "__main__":
@@ -23,6 +24,7 @@ if __name__ == "__main__":
         else:
             fileReader = open(sys.argv[4], "r")
             for lines in fileReader:
+                lines = lines.strip()
                 queries.append(lines)
             fileReader.close()
 
@@ -32,7 +34,9 @@ if __name__ == "__main__":
                 print("Query-Question: %s\n\n" % eachQuery)
                 part2.run(eachQuery)
         else:
-            print("Do nothing")
+            for eachQuery in queries:
+                print("Query-Question: %s\n\n" % eachQuery)
+                infobox.infobox(eachQuery)
     else:
         while True:
             query = raw_input("Please input your query.\n")
@@ -42,7 +46,7 @@ if __name__ == "__main__":
                 part2 = Part2()
                 part2.run(query)
             else:
-                print("Do nothing")
+                infobox.infobox(query)
 
 
     sys.exit(0)
