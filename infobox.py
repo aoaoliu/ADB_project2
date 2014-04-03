@@ -1,12 +1,11 @@
 #!/usr/bin/python
-# this is part 1
 import json
 import urllib
 import re
 
 
-#api_key = open(".api_key").read().strip()
-api_key = "AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4"
+api_key = open(".api_key").read().strip()
+#api_key = "AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4"
 freebase_entity_types = {
 	'/type/object': 'Basic',
 	'/people/person': 'Person',
