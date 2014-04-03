@@ -4,6 +4,31 @@ import urllib
 import re
 
 
+"""
+This is a nice observation that we expected you to have while implementing this system and interacting with freebase and the reference implementation.
+ 
+The reference implementation decides to group the "people-related" entities in case a person exhibits multiple entity types. However, the League-Person (BusinessPerson, Author, Actor), League-Team, and Team-Person (Buesinessperson, Author, Actor) merges are not allowed, and this is a design choice for what make sense in what we model :). Keep in mind that even Google and Bing give different infoboxes for the same query,
+ 
+So, what is the correct answer in such cases and what is expected from you? I would encourage you to follow the reference implementation. However, all combinations are allowed and no points will be deducted. What is required, of course, is to group the people-related entities. The rest of the design (the 3 merges-or not- above) is up to you. Moreover, note that we require just one infobox. Which means that you should not output one for the NFL as League and one for NFL as Author. Finally, you are required to reason on your design choices in your README.   
+ 
+Best,
+   -Fotis
+"""
+"""
+Since the description is quite a lengthy text the reference implementation just sticks with the first one. For properties that make sense to just pick one (e.g., name, description) you can do so, but you have to reason on your choice at your README file. Otherwise, you may treat everything as an array of values, or concatenate (e.g., comma-separated) multiple values to one.
+"""
+"""
+"The reference implementation does not use any tv_actor properties and you don't need to support any (e.g., tv_shows) for the FilmsParticipated property.
+Sometimes freebase might mention /tv/tv_actor where it meant to mention /film/actor but without mentioning it. That's why we have added the /tv/tv_actor as an extra check for the Actor type. That's also why at the description of properties we mention explicitly Film Name and not series name, shows name etc. (as these are related to /tv/tv_actor.)"
+"""
+"""
+What is definitely in the grading criteria is what you the infobox displays (properties and their extracted values.)
+"""
+"""
+Yes you need to print an infobox about it. Most likely this will correspond to a person, otherwise the infobox should be empty (if no FilmParticipated exist) based on the specification. This is an odd kind of case, but we had to come up with it in order to avoid redundancy checks. For instance, in that case we may had requested that you print the name of the tv actor as part of the Actor property which in most cases would duplicate the Person.Name property and you would need to make these extra check (or come up with a more sophisticated mapping) to avoid the same name being presented twice. Thus, for the sake of less redundancy checks your system may exhibit such odd cases.
+"""
+
+
 api_key = open(".api_key").read().strip()
 freebase_entity_types = {
 	'/type/object': 'Basic',
@@ -14,7 +39,7 @@ freebase_entity_types = {
 	'/book/book_subject': 'Author',
 	'/influence/influence_node': 'Author',
 	'/film/actor': 'Actor',
-	'/tv/tv_actor': 'Actor', # TODO see piazza
+	'/tv/tv_actor': 'Actor', # TODO if there is this item, we should report, but we don't use the sub-terms here
 	'/organization/organization_founder': 'BusinessPerson',
 	'/business/board_member': 'BusinessPerson',
 	'/sports/sports_league': 'League',
@@ -282,7 +307,7 @@ def print_hash(table, type_of_entities):
 			table['/people/deceased_person/death'] = [death]
 	#print table['/people/deceased_person/death']
 
-	# the order for the six higher categories # TODO should sort the 'name', 'description' and 'officialwebsite'?
+	# the order for the six higher categories
 	class_temp = ['Basic', 'Person', 'Author', 'BusinessPerson', 'Actor', 'League', 'SportsTeam']
 	temp = []
 	for i in range(len(class_temp)):
@@ -435,14 +460,18 @@ def getentity(result_extracted, type_of_entities, type_list):
 				location = result_concat(property, '/people/marriage/location_of_ceremony')
 				# let each of the elements be a printable spouse
 				# spouse + ' (' + begin + ' - ' + end + ') @ ' + location
-				# TODO do more testing here?
-				temp = [spouse, begin, end, location]
-				if temp[2] == '':
-					temp[2] = 'now'
-				if temp[3] != '':
-					temp = temp[0] + ' (' + temp[1] + ' - ' + temp[2] + ') @ ' + temp[3]
+				if begin == '':
+					time = begin
+				elif end == '':
+					time = '(' + begin + ' - now)'
 				else:
-					temp = temp[0] + ' (' + temp[1] + ' - ' + temp[2] + ')'
+					time = '(' + begin + ' - ' + end + ')'
+				if time == '' and location == '':
+					temp = spouse
+				elif time == '':
+					temp = spouse + ' @ ' + location
+				else:
+					temp = spouse + ' (' + time + ')'
 				result[item].append(temp)
 		if item == '/common/topic/description':
 			for item1 in result_extracted[item]: # each item1 is a description TODO but how many description we should use if there are several??
@@ -553,6 +582,19 @@ def getentity(result_extracted, type_of_entities, type_list):
 	return result
 
 
+def check_six(type_list, result_extracted):
+	#DEBUG
+	#print result_extracted['/type/object/name'][0]['text']
+	#print type_list
+	for url in type_list:
+		match = ENTITY_TYPE.match(url)
+		type = match.group()
+		if freebase_entity_types[type] in ['Person', 'Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
+			return True
+	return False
+
+
+
 #if __name__ == '__main__':
 def infobox(query):
 
@@ -585,12 +627,17 @@ def infobox(query):
 	NO_RESULT = True
 	for i in range(len(mid)):
 		(result_extracted, type_of_entities, type_list) = supported(mid[i])
-		if len(type_list) == 0:
+		#if len(type_list) == 0:
+		if not check_six(type_list, result_extracted):
 			continue
 		else:
 			NO_RESULT = False
 			break
 	
+	# DEBUG
+	#print type_list
+	#print type_of_entities
+
 	if NO_RESULT:
 		print "No results for query \"%s\". Program terminate." %(query)
 	else:
