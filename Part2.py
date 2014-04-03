@@ -6,7 +6,6 @@ from Interface import *
 
 
 class Part2:
-    #KEY = "AIzaSyCVb_mt-6ajVFZ6hNPsAPQThomsKJBgw6Q"
     KEY = api_key = open(".api_key").read().strip()
 
     def __init__(self):
