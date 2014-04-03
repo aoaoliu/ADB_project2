@@ -54,6 +54,9 @@ d.  Internal design:
 ##
 
 ->part2(by Yunao Liu)
+After getting query, the program will first convert the query word into two paragraph of MQL languages-- authors and bussinessperson.
+Then the program will question Freebase with the two paragraph of MQL. After retriving answer, the program will extract person name and his works, then rank by person names.
+Finall the program will output all results.
 ##
 
 f.  Bing search key:
