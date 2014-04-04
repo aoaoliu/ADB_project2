@@ -648,6 +648,8 @@ def infobox(query):
 		(result_extracted, type_of_entities, type_list) = supported(mid[i])
 		#if len(type_list) == 0:
 		if not check_six(type_list,  type_of_entities, result_extracted):
+			if (i+1)%5 == 0:
+				print "%s Search API result entries were considered. None of them of a supported type."%(i+1)
 			continue
 		else:
 			NO_RESULT = False
