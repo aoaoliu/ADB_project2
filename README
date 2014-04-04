@@ -41,6 +41,8 @@ OR
 
 2. ./Main.py -key <Freebase API key> -f <file of queries> -t <infobox|question>
 
+(We have prepared two files 'queries1.txt' and 'queries2.txt' for testing. The first file is for infobox, and the second one is for question_answering)
+
 OR
 
 3. ./Main.py -key <Freebase API key>

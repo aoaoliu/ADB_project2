@@ -27,18 +27,6 @@ What is definitely in the grading criteria is what you the infobox displays (pro
 """
 Yes you need to print an infobox about it. Most likely this will correspond to a person, otherwise the infobox should be empty (if no FilmParticipated exist) based on the specification. This is an odd kind of case, but we had to come up with it in order to avoid redundancy checks. For instance, in that case we may had requested that you print the name of the tv actor as part of the Actor property which in most cases would duplicate the Person.Name property and you would need to make these extra check (or come up with a more sophisticated mapping) to avoid the same name being presented twice. Thus, for the sake of less redundancy checks your system may exhibit such odd cases.
 """
-"""
-For Part 1, you are required to produce a mapping from the freebase properties to the properties of interest.
-For instance, you are retrieving the Person.PlaceOfBirth property from the property "/people/person/place_of_birth"
-So, your listing may look like the following:
- 
-Freebase Property	Property of interest	Comments
-Person.PlaceOfBirth	/people/person/place_of_birth	
-I used only the first entry from the array of values provided by freebase, as it does not make sense for people to have multiple dates of birth.
-To extract the actual value I used the "value" tag (string format) from the entry.
- 
-Of course the way each one expresses herself/himself is personalized, so the above can vary based on personal preferences.
-"""
 
 
 api_key = open(".api_key").read().strip()
