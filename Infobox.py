@@ -258,12 +258,20 @@ def print_table(name, table):
 def print_hash(table, type_of_entities):
 	#----------------- extract type of entity  of interests here -----------------
 	class_list = []
-	for category in ['Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
+	for category in ['League', 'SportsTeam']:
+		if len(type_of_entities[category]) != 0:
+			class_list.append(category)
+			#for item in type_of_entities[category]:
+			#	if len(type_of_entities[category][item]) != 0:
+			#		class_list.append(category)
+			#		break
+	for category in ['Author', 'Actor', 'BusinessPerson']:
 		if len(type_of_entities[category]) != 0:
 			for item in type_of_entities[category]:
 				if len(type_of_entities[category][item]) != 0:
 					class_list.append(category)
 					break
+
 	if 'SportsTeam' in class_list:
 		class_list = ['SportsTeam'] # we only need this information for a team
 	if 'League' in class_list:
@@ -404,9 +412,9 @@ def supported(mid):
 					
 					# DEBUG
 					#print item
-
-					type_of_entities[freebase_entity_types[temp]][temp].append(item)
-					type_list.append(item)
+					if temp in type_of_entities[freebase_entity_types[temp]]:
+						type_of_entities[freebase_entity_types[temp]][temp].append(item)
+						type_list.append(item)
 	#print ''
 	# DEBUG
 	#print "This is the entity directory:"
