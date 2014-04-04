@@ -151,6 +151,28 @@ for the following two, several sub-properties are also extracted; each coach/ros
 After getting query, the program will first convert the query word into two paragraph of MQL languages-- authors and bussinessperson.
 Then the program will question Freebase with the two paragraph of MQL. After retriving answer, the program will extract person name and his works, then rank by person names.
 Finall the program will output all results.
+
+MQL:
+
+[{
+  "/book/author/works_written": [{
+    "name": [],
+    "name~=": "microsoft"
+  }],
+  "name": null,
+  "type": "/book/author"
+}]
+
+[{
+  "/organization/organization_founder/organizations_founded": [{
+    "name": [],
+    "name~=": "microsoft"
+  }],
+  "name": null,
+  "type": "/organization/organization_founder"
+}]
+
+
 ##
 
 f.  Bing search key:
