@@ -148,13 +148,13 @@ for the following two, several sub-properties are also extracted; each coach/ros
 
 Special:
 
-1. For the '/tv/tv_actor', we use it to judge whether this 'mid' is what we need (has at least one of the six higher-level entities), but we don't use its sub-entities to extract effective information. So there is possibly a scenario in which we have "xxx (Actor)", but the following infobox only have 'Name' and 'Description' entities, but not something about the 'Actor'.
+1. For the '/tv/tv_actor', we use it to judge whether this 'mid' is what we need (has at least one of the six higher-level entities), but we don't use its sub-entities to extract effective information. So there is possibly a scenario in which we have "xxx (Actor)", but the following infobox only have 'Name' and 'Description' entities, but nothing about the 'Actor'.
 
 2. We only extract the 'officialsite' information for a 'League', but not for anything else.
 
 3. If there is 'SportsTeam' related information, we take this 'mid' only as 'SportsTeam' and only print related information (plus 'Name' and 'Description' if any); then if there is 'League' related information, we take this 'mid' only as 'League' and only print related information (plus 'Name', 'Description' and 'Officialsite' if any).
 
-4. If there is a entity but no information in it, we will print ''. For example, if we have '/common/topic/description' from freebase, but due to some reasons there are actually no 'Description' information in that entity, we just print '', other than deleting this entity. (So our assumption is that if there is an entity such as '/common/topic/description', there must be its values for that entity from freebase)
+4. If there is an entity but no information in it, we will print ''. For example, if we have '/common/topic/description' from freebase, but due to some reasons there are actually no 'Description' information in that entity, we just print '', other than deleting this entity. (So our assumption is that if there is an entity such as '/common/topic/description', there must be its values for that entity from freebase)
 
 
 ->part2(by Yunao Liu)
@@ -183,7 +183,6 @@ MQL:
 }]
 
 
-##
 
 f.  Bing search key:
     AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4
