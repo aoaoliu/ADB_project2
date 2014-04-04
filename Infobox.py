@@ -28,14 +28,6 @@ What is definitely in the grading criteria is what you the infobox displays (pro
 Yes you need to print an infobox about it. Most likely this will correspond to a person, otherwise the infobox should be empty (if no FilmParticipated exist) based on the specification. This is an odd kind of case, but we had to come up with it in order to avoid redundancy checks. For instance, in that case we may had requested that you print the name of the tv actor as part of the Actor property which in most cases would duplicate the Person.Name property and you would need to make these extra check (or come up with a more sophisticated mapping) to avoid the same name being presented twice. Thus, for the sake of less redundancy checks your system may exhibit such odd cases.
 """
 """
-The second looks better. You may want to add a counter before each line in this case (to make it more clear to the user).
-1) Creative Capitalism...
-    onomic leaders
-2) The Microsoft...
-3) Programmers...
-"""
-
-"""
 For Part 1, you are required to produce a mapping from the freebase properties to the properties of interest.
 For instance, you are retrieving the Person.PlaceOfBirth property from the property "/people/person/place_of_birth"
 So, your listing may look like the following:
@@ -59,7 +51,7 @@ freebase_entity_types = {
 	'/book/book_subject': 'Author',
 	'/influence/influence_node': 'Author',
 	'/film/actor': 'Actor',
-	'/tv/tv_actor': 'Actor', # TODO if there is this item, we should report, but we don't use the sub-terms here
+	'/tv/tv_actor': 'Actor', # TODO if there is such an item, we should report, but we don't use the sub-terms here
 	'/organization/organization_founder': 'BusinessPerson',
 	'/business/board_member': 'BusinessPerson',
 	'/sports/sports_league': 'League',
@@ -153,12 +145,29 @@ def print_description(content):
 	return
 
 
+def print_left(s):
+	while len(s) > 77:
+		print (' ' * 8) + '|' + (' ' *20),
+		print s[0:77] + ' ' + '|'
+		s = s[77:]
+	print (' ' * 8) + '|' + (' ' *20),
+	print s + (' ' * (78 - len(s))) + '|'
+	return
+
 def print_list(name, list):
+	# if there are several items in a list, we add a mark to each of them
+	if len(list) > 1:
+		for i in range(len(list)):
+			list[i] = str(i+1) + ') ' + list[i]
+
+	# print the first item in the list
 	upline = (' ' * 9) + ('-' * 99)
 	print (' ' * 8) + '| ' + name + ':' + (' ' * (15 - len(name))),
 	if len(list[0]) > 80:
-		list[0] = list[0][0:77] + '...'
-	print list[0] + (' ' * (81 - len(list[0]))) + '|'
+		print list[0][0:80] + ' ' + '|'
+		print_left(list[0][80:])
+	else:
+		print list[0] + (' ' * (81 - len(list[0]))) + '|'
 
 	if len(list) == 1:
 		print upline
@@ -166,8 +175,10 @@ def print_list(name, list):
 		for i in range(1,len(list)):
 			print (' ' * 8) + '|' + (' ' * 17),
 			if len(list[i]) > 80:
-				list[i] = list[i][0:77] + '...'
-			print list[i] + (' ' * (81 - len(list[i]))) + '|'
+				print list[i][0:80] + ' ' + '|'
+				print_left(list[i][80:])
+			else:
+				print list[i] + (' ' * (81 - len(list[i]))) + '|'
 		print upline
 	return
 
@@ -491,10 +502,10 @@ def getentity(result_extracted, type_of_entities, type_list):
 				elif time == '':
 					temp = spouse + ' @ ' + location
 				else:
-					temp = spouse + ' (' + time + ')'
+					temp = spouse + ' ' + time
 				result[item].append(temp)
 		if item == '/common/topic/description':
-			for item1 in result_extracted[item]: # each item1 is a description TODO but how many description we should use if there are several??
+			for item1 in result_extracted[item]: # each item1 is a description
 				result[item].append(item1['value'])
 
 		##### Author #####

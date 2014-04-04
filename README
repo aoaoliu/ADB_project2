@@ -51,7 +51,97 @@ For option#3, if you want to submit a question, please use the format of "who cr
 d.  Internal design:
 
 ->part1(by Shuo Yang)
-##
+I first use 'type/object/type' to judge whether we should use this 'mid' (whether this 'mid' contains at least one of the six entities we have interests); then we use the following mapping rules to extract the information we need from freebase.
+
+Here is the mapping rules of our program: (from freebase entity link to our type)
+##### Person #####
+for the following entities, we extract all the possible items and print them as a list of items (one line one item):
+#'/type/object/name': 'Name'
+#'/people/person/date_of_birth': 'Birthday'
+#'/people/person/place_of_birth': 'Place of birth'
+#'/people/person/sibling_s': 'Siblings'
+for the following two, I extract all the items from freebase (actually there should be only one for each of them) but later on I just use the first one to concatenate the final result about death:
+#'/people/deceased_person/place_of_death': 'Death(Place)'
+#'/people/deceased_person/date_of_death': 'Death(Date)'
+for the following one, as one person may die for several reasons, we extract all the possible causese and concatenate them:
+#'/people/deceased_person/cause_of_death': 'Death(Cause)'
+for the about 'Death(Place)', 'Death(Date)' and 'Death(Cause)', as they should be printed as one item, I just concatenate the first element of each of them to a string before printing (as there are always only one place and one date and one cause for someone's death)
+for the following one, several sub-properties are also extracted; each spouse consists of a list of properties and the elements will be concatenated appropriately finally:
+#'/people/person/spouse_s': 'Spouses'
+#	'/people/marriage/spouse': spouse
+#	'/people/marriage/from': from
+#	'/people/marriage/to': to
+#	'/people/marriage/location_of_ceremony': location
+for the following one, all the descriptions are extracted, but only the first one is printed, because we think that one description is enough and less redundant for our simple infobox:
+#'/common/topic/description': 'Descriptions'
+
+##### Author #####
+for the following entities, we extract all the possible items and print them as a list of items (one line one item):
+#'/book/author/works_written': 'Books'
+#'/book/book_subject/works': 'Books about'
+#'/influence/influence_node/influenced'
+#'/influence/influence_node/influenced_by': 'Influenced By'
+
+##### Actor #####
+I just use the following entity to judge whether we should report this 'mid', but not extract some information from its sub-entities:
+#"/tv/tv_actor"
+for the following one, several sub-properties are also extracted; each file consists of a list of properties and the elements will be printed separately in an appropriate form finally:
+#'/film/actor/film': 'Films'
+#	'/film/performance/character': character
+#	'/film/performance/film': film
+
+##### BusinessPerson #####
+for the following one, several sub-properties are also extracted; each leadership consists of a list of properties and the elements will be printed separately in an appropriate form finally:
+#'/business/board_member/leader_of': 'Leadership'
+#	'/organization/leadership/organization': organization
+#	'/organization/leadership/role': role
+#	'/organization/leadership/title': title
+#	'/organization/leadership/from': from
+#	'/organization/leadership/to': to
+for the following one, several sub-properties are also extracted; each membership consists of a list of properties and the elements will be printed separately in an appropriate form finally:
+#'/business/board_member/organization_board_memberships': 'Board Member'
+#	'/organization/organization_board_membership/organization': organization
+#	'/organization/organization_board_membership/role': role
+#	'/organization/organization_board_membership/title': title
+#	'/organization/organization_board_membership/from': from
+#	'/organization/organization_board_membership/to': to
+for the following entities, we extract all the possible items and print them as a list of items (one line one item):
+#'/organization/organization_founder/organizations_founded': 'Founded'
+
+##### League #####
+for the following entities, we extract all the possible items and print them as a list of items (one line one item):
+#'/type/object/name': 'Name'
+#'/sports/sports_league/championship': 'Championship'
+#'/sports/sports_league/sport': 'Sport'
+#'/organization/organization/slogan': 'Slogan'
+#'/common/topic/official_website': 'OfficialWebsite'
+for the following one, all the descriptions are extracted, but only the first one is printed, because we think that one description is enough and less redundant for our simple infobox:
+#'/common/topic/description': 'Description'
+
+##### SportsTeam #####
+for the following entities, we extract all the possible items and print them as a list of items (one line one item):
+#'/sports/sports_league/teams': 'Teams',
+#'/type/object/name': 'Name'
+#'/common/topic/description': 'Description'
+#'/sports/sports_team/sport': 'Sport'
+#'/sports/sports_team/arena_stadium': 'Arena'
+#'/sports/sports_team/championships': 'Championships'
+#'/sports/sports_team/founded': 'Founded'
+#'/sports/sports_team/league': 'Leagues'
+#'/sports/sports_team/location': 'Locations'
+for the following two, several sub-properties are also extracted; each coach/roster consists of a list of properties and the elements will be printed separately in an appropriate form finally:
+#'/sports/sports_team/coaches': 'Coaches'
+#	'/sports/sports_team_coach_tenure/coach': 'Name'
+#	'/sports/sports_team_coach_tenure/position': 'Position'
+#	'/sports/sports_team_coach_tenure/from': 'From'
+#	'/sports/sports_team_coach_tenure/to': 'To'
+#'/sports/sports_team/roster': 'PlayersRoster'
+#	'/sports/sports_team_roster/player': 'Name'
+#	'/sports/sports_team_roster/position': 'position'
+#	'/sports/sports_team_roster/number': 'Number'
+#	'/sports/sports_team_roster/from': 'From'
+#	'/sports/sports_team_roster/to': 'To'
+
 
 ->part2(by Yunao Liu)
 After getting query, the program will first convert the query word into two paragraph of MQL languages-- authors and bussinessperson.
