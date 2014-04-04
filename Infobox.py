@@ -4,21 +4,6 @@ import urllib
 import re
 
 
-"""
-This is a nice observation that we expected you to have while implementing this system and interacting with freebase and the reference implementation.
- 
-The reference implementation decides to group the "people-related" entities in case a person exhibits multiple entity types. However, the League-Person (BusinessPerson, Author, Actor), League-Team, and Team-Person (Buesinessperson, Author, Actor) merges are not allowed, and this is a design choice for what make sense in what we model :). Keep in mind that even Google and Bing give different infoboxes for the same query,
- 
-So, what is the correct answer in such cases and what is expected from you? I would encourage you to follow the reference implementation. However, all combinations are allowed and no points will be deducted. What is required, of course, is to group the people-related entities. The rest of the design (the 3 merges-or not- above) is up to you. Moreover, note that we require just one infobox. Which means that you should not output one for the NFL as League and one for NFL as Author. Finally, you are required to reason on your design choices in your README.
- 
-Best,
-   -Fotis
-"""
-"""
-What is definitely in the grading criteria is what you the infobox displays (properties and their extracted values.)
-"""
-
-
 #api_key = open(".api_key").read().strip()
 api_key = "AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4"
 freebase_entity_types = {
