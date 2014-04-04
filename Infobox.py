@@ -74,9 +74,9 @@ freebase_mapping = {
 	'/organization/organization/slogan': 'Slogan',
 	'/common/topic/official_website': 'OfficialWebsite',
 	#'': 'Description', # we have obtained this by '/common/topic/description'
+	'/sports/sports_league/teams': 'Teams',
 
 	##### SportsTeam #####
-	'/sports/sports_league/teams': 'Teams',
 	#'': 'Name', # we have obtained this by '/type/object/name'
 	#'': 'Description', # we have obtained this by '/common/topic/description'
 	'/sports/sports_team/sport': 'Sport',
@@ -614,10 +614,15 @@ def check_six(type_list, type_of_entities, result_extracted):
 	#for entity in ['Person', 'Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
 	#	if len(type_of_entities[entity]) != 0:
 	#		return True
-	if len(type_of_entities['Person']) == 0:
+	if len(type_of_entities['SportsTeam']) == 0:
 		pass
 	else:
 		return True
+		"""
+		for item in type_of_entities['SportsTeam']:
+			if len(type_of_entities['SportsTeam'][item]) != 0:
+				return True
+		"""
 
 	if len(type_of_entities['League']) == 0:
 		pass
@@ -628,15 +633,10 @@ def check_six(type_list, type_of_entities, result_extracted):
 			else:
 				return True
 
-	if len(type_of_entities['SportsTeam']) == 0:
+	if len(type_of_entities['Person']) == 0:
 		pass
 	else:
 		return True
-		"""
-		for item in type_of_entities['SportsTeam']:
-			if len(type_of_entities['SportsTeam'][item]) != 0:
-				return True
-		"""
 
 	return False
 
