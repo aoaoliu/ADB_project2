@@ -9,16 +9,13 @@ This is a nice observation that we expected you to have while implementing this 
  
 The reference implementation decides to group the "people-related" entities in case a person exhibits multiple entity types. However, the League-Person (BusinessPerson, Author, Actor), League-Team, and Team-Person (Buesinessperson, Author, Actor) merges are not allowed, and this is a design choice for what make sense in what we model :). Keep in mind that even Google and Bing give different infoboxes for the same query,
  
-So, what is the correct answer in such cases and what is expected from you? I would encourage you to follow the reference implementation. However, all combinations are allowed and no points will be deducted. What is required, of course, is to group the people-related entities. The rest of the design (the 3 merges-or not- above) is up to you. Moreover, note that we require just one infobox. Which means that you should not output one for the NFL as League and one for NFL as Author. Finally, you are required to reason on your design choices in your README.   
+So, what is the correct answer in such cases and what is expected from you? I would encourage you to follow the reference implementation. However, all combinations are allowed and no points will be deducted. What is required, of course, is to group the people-related entities. The rest of the design (the 3 merges-or not- above) is up to you. Moreover, note that we require just one infobox. Which means that you should not output one for the NFL as League and one for NFL as Author. Finally, you are required to reason on your design choices in your README.
  
 Best,
    -Fotis
 """
 """
-Since the description is quite a lengthy text the reference implementation just sticks with the first one. For properties that make sense to just pick one (e.g., name, description) you can do so, but you have to reason on your choice at your README file. Otherwise, you may treat everything as an array of values, or concatenate (e.g., comma-separated) multiple values to one.
-"""
-"""
-"The reference implementation does not use any tv_actor properties and you don't need to support any (e.g., tv_shows) for the FilmsParticipated property.
+The reference implementation does not use any tv_actor properties and you don't need to support any (e.g., tv_shows) for the FilmsParticipated property.
 Sometimes freebase might mention /tv/tv_actor where it meant to mention /film/actor but without mentioning it. That's why we have added the /tv/tv_actor as an extra check for the Actor type. That's also why at the description of properties we mention explicitly Film Name and not series name, shows name etc. (as these are related to /tv/tv_actor.)"
 """
 """
@@ -125,9 +122,9 @@ def print_description(content):
 
 	upline = (' ' * 9) + ('-' * 99)
 	print (' ' * 8) + '| '  + 'Descriptions:' + (' ' * 3),
-	while len(content) > 81:
-		print content[0:81] + '|'
-		content = content[81:]
+	while len(content) > 80:
+		print content[0:80] + ' |'
+		content = content[80:]
 		print (' ' * 8) + '| ' + (' ' * 16),
 	print content[:] + (' ' * (81 - len(content))) + '|'
 	print upline
@@ -381,7 +378,7 @@ def supported(mid):
 	#print result
 	
 	for item in result: # item here is kind of types of freebase; we should map them to those 
-				# we hve interests in, and extract the values
+				# we have interests in, and extract the values
 		result[item] = result[item]['values']
 		if item == '/type/object/type': # use this to confirm which entities to extract
 			for item1 in result[item]:
@@ -394,7 +391,7 @@ def supported(mid):
 						#print freebase_entity_types[temp]
 						type_of_entities[freebase_entity_types[temp]][type] = []
 
-	type_of_entities['Basic']['/type/object'] = [] # for name entity specially
+	type_of_entities['Basic']['/type/object'] = [] # for name entity specially; each item always has a name
 
 	for item in result: # extract the entity names we need
 		match = ENTITY_TYPE.match(item)
@@ -602,14 +599,20 @@ def getentity(result_extracted, type_of_entities, type_list):
 	return result
 
 
-def check_six(type_list, result_extracted):
+def check_six(type_list, type_of_entities, result_extracted):
 	#DEBUG
 	#print result_extracted['/type/object/name'][0]['text']
 	#print type_list
+	"""
 	for url in type_list:
 		match = ENTITY_TYPE.match(url)
 		type = match.group()
 		if freebase_entity_types[type] in ['Person', 'Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
+			return True
+	"""
+	# For the '/tv/tv_actor', we use it to judge whether this 'mid' is what we need (has at least one of the six higher-level entities), but we don't use its sub-entities to extract effective information. So there is possibly a scenario in which we have "xxx (Actor)", but the following infobox only have 'Name' and 'Description' entities, but not something about the 'Actor'.
+	for entity in ['Person', 'Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
+		if len(type_of_entities[entity]) != 0:
 			return True
 	return False
 
@@ -648,7 +651,7 @@ def infobox(query):
 	for i in range(len(mid)):
 		(result_extracted, type_of_entities, type_list) = supported(mid[i])
 		#if len(type_list) == 0:
-		if not check_six(type_list, result_extracted):
+		if not check_six(type_list,  type_of_entities, result_extracted):
 			continue
 		else:
 			NO_RESULT = False
@@ -659,7 +662,7 @@ def infobox(query):
 	#print type_of_entities
 
 	if NO_RESULT:
-		print "No results for query \"%s\". Program terminate." %(query)
+		print "No results for query \"%s\"." %(query)
 	else:
 		entity = getentity(result_extracted, type_of_entities, type_list)
 		# for entity, key is the freebase entity name, and value is the values for that entity, which is a string list
