@@ -156,6 +156,12 @@ Special:
 
 3. If there is 'SportsTeam' related information, we take this 'mid' only as 'SportsTeam' and only print related information (plus 'Name' and 'Description' if any); then if there is 'League' related information, we take this 'mid' only as 'League' and only print related information (plus 'Name', 'Description' and 'Officialsite' if any). More specifically speaking, for all the extracted entities from freebase, if there is anything about 'SportsTeam', we take this 'mid' exactly as 'SportsTeam'; then, if there is anything about 'League', we take this 'mid' exactly as 'League'; then, this 'mid' should be 'Person' and/or 'Author' and/or 'Actor' and/or 'BusinessPerson'. This is extremely inportant, because this decides which category this entity belongs to, and we think this will be judged during the testing.
 
+4. We use the following entities to judge which higher-level entity this 'mid' belongs to:
+'/people/person': 'Person' related (plus 'Author'/'Actor'/'BusinessPerson'; we only use 'Person' to judge because we think that if a 'mid' is others, say, 'Author', it should be at least a 'Person')
+'/sports/sports_league': 'League'
+'/sports/sports_team': 'SportsTeam'
+We find that the above entities are essential for identification of one kind of classes ('Person' related, 'League' related, and 'SportsTeam' related)
+
 
 ->part2(by Yunao Liu)
 After getting query, the program will first convert the query word into two paragraph of MQL languages-- authors and bussinessperson.
