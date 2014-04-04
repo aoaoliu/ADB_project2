@@ -260,7 +260,10 @@ def print_hash(table, type_of_entities):
 	class_list = []
 	for category in ['Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
 		if len(type_of_entities[category]) != 0:
-			class_list.append(category)
+			for item in type_of_entities[category]:
+				if len(type_of_entities[category][item]) != 0:
+					class_list.append(category)
+					break
 	if 'SportsTeam' in class_list:
 		class_list = ['SportsTeam'] # we only need this information for a team
 	if 'League' in class_list:
