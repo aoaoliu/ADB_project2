@@ -38,18 +38,21 @@ b.  List:
 c.  How to run:
 
 1. ./Main.py -key <Freebase API key> -q <query> -t <infobox|question>
+(e.g. ./Main.py -key xxxxxxxxxxxxxxxxxxxxxxxx -q "Bill Gates" -t "infobox")
 
 OR
 
 2. ./Main.py -key <Freebase API key> -f <file of queries> -t <infobox|question>
+(e.g. ./Main.py -key xxxxxxxxxxxxxxxxxxxxxxxx -f "queries1.txt" -t "infobox")
 
 (We have prepared two files 'queries1.txt' and 'queries2.txt' for testing. The first file is for infobox, and the second one is for question_answering)
 
 OR
 
 3. ./Main.py -key <Freebase API key>
+(e.g. ./Main.py -key xxxxxxxxxxxxxxxxxxxxxxxx)
 
-For option#3, if you want to submit a question, please use the format of "who created XXX ?", otherwise, your query will be answered by infobox.
+For option#3, this is an interactive command line option. If you want to submit a question, please use the format of "who created XXX ?", otherwise, your query will be answered by infobox.
 
 
 d.  Internal design:

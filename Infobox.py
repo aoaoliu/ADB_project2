@@ -93,7 +93,10 @@ freebase_mapping = {
 def print_headline(name, list):
 	upline = (" " * 9) + ("-" * 99)
 	print upline
-	temp = name + ' (' + (', '.join(list)) + ')'
+	if len(list) == 0:
+		temp = name
+	else:
+		temp = name + ' (' + (', '.join(list)) + ')'
 	N = (50 - int(len(temp)/2))
 	print (' ' * 8) + '|',
 	print (' ' * N) + temp + (' ' * (100 - N - len(temp) - 2)) + '|'
@@ -115,9 +118,9 @@ def print_description(content):
 
 	upline = (' ' * 9) + ('-' * 99)
 	print (' ' * 8) + '| '  + 'Descriptions:' + (' ' * 3),
-	while len(content) > 80:
-		print content[0:80] + ' |'
-		content = content[80:]
+	while len(content) > 81:
+		print content[0:81] + '|'
+		content = content[81:]
 		print (' ' * 8) + '| ' + (' ' * 16),
 	print content[:] + (' ' * (81 - len(content))) + '|'
 	print upline
