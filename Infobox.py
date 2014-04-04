@@ -599,6 +599,7 @@ def getentity(result_extracted, type_of_entities, type_list):
 
 
 def check_six(type_list, type_of_entities, result_extracted):
+	#print type_of_entities
 	#DEBUG
 	#print result_extracted['/type/object/name'][0]['text']
 	#print type_list
@@ -613,12 +614,29 @@ def check_six(type_list, type_of_entities, result_extracted):
 	#for entity in ['Person', 'Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
 	#	if len(type_of_entities[entity]) != 0:
 	#		return True
-	if len(type_of_entities['Person']) != 0:
-		return True
-	elif len(type_of_entities['League']) != 0:
-		return True
-	elif len(type_of_entities['SportsTeam']) != 0:
-		return True
+	if len(type_of_entities['Person']) == 0:
+		pass
+	else:
+		for item in type_of_entities['Person']:
+			if len(type_of_entities['Person'][item]) != 0:
+				return True
+
+	if len(type_of_entities['League']) == 0:
+		pass
+	else:
+		for item in type_of_entities['League']:
+			if item == '/organization/organization':
+				continue
+			if len(type_of_entities['League'][item]) != 0:
+				return True
+
+	if len(type_of_entities['SportsTeam']) == 0:
+		pass
+	else:
+		for item in type_of_entities['SportsTeam']:
+			if len(type_of_entities['SportsTeam'][item]) != 0:
+				return True
+
 	return False
 
 
