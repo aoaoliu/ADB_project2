@@ -663,7 +663,8 @@ def infobox(query):
 	#print type_of_entities
 
 	if NO_RESULT:
-		print "No results for query \"%s\"." %(query)
+		#print "No results for query \"%s\"." %(query)
+		print "No related information about query [%s] was found!" % query
 	else:
 		entity = getentity(result_extracted, type_of_entities, type_list)
 		# for entity, key is the freebase entity name, and value is the values for that entity, which is a string list
