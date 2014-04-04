@@ -137,6 +137,9 @@ def print_left(s):
 	return
 
 def print_list(name, list):
+	if len(list) == 0:
+		return
+
 	# if there are several items in a list, we add a mark to each of them
 	if len(list) > 1:
 		for i in range(len(list)):
