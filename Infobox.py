@@ -610,9 +610,15 @@ def check_six(type_list, type_of_entities, result_extracted):
 			return True
 	"""
 	# For the '/tv/tv_actor', we use it to judge whether this 'mid' is what we need (has at least one of the six higher-level entities), but we don't use its sub-entities to extract effective information. So there is possibly a scenario in which we have "xxx (Actor)", but the following infobox only have 'Name' and 'Description' entities, but not something about the 'Actor'.
-	for entity in ['Person', 'Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
-		if len(type_of_entities[entity]) != 0:
-			return True
+	#for entity in ['Person', 'Author', 'Actor', 'BusinessPerson', 'League', 'SportsTeam']:
+	#	if len(type_of_entities[entity]) != 0:
+	#		return True
+	if len(type_of_entities['Person']) != 0:
+		return True
+	elif len(type_of_entities['League']) != 0:
+		return True
+	elif len(type_of_entities['SportsTeam']) != 0:
+		return True
 	return False
 
 
