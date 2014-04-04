@@ -4,7 +4,6 @@ part1:
 Query-Question: Bill Gates
 
 
-
          ---------------------------------------------------------------------------------------------------
         |                                  Bill Gates (Author, BusinessPerson)                              |
          ---------------------------------------------------------------------------------------------------
@@ -29,29 +28,30 @@ Query-Question: Bill Gates
         |                  ing large amounts of money to various charitable organizations and scientific res|
         |                  earch programs through the Bill & Melinda Gates Foundation, established in 2000. |
          ---------------------------------------------------------------------------------------------------
-        | Siblings:        Libby Gates                                                                      |
-        |                  Kristi Gates                                                                     |
+        | Siblings:        1) Libby Gates                                                                   |
+        |                  2) Kristi Gates                                                                  |
          ---------------------------------------------------------------------------------------------------
         | Place of birth:  Seattle                                                                          |
          ---------------------------------------------------------------------------------------------------
-        | Spouses:         Melinda Gates (1994-01-01 - now) @ Lanai                                         |
+        | Spouses:         Melinda Gates (1994-01-01 - now)                                                 |
          ---------------------------------------------------------------------------------------------------
         | Birthday:        1955-10-28                                                                       |
          ---------------------------------------------------------------------------------------------------
-        | Influenced:      Marc Nicholas Rohde                                                              |
-        |                  Naveen Jain                                                                      |
-        |                  Cenk Aydin                                                                       |
-        |                  Daniel Podgaichenko                                                              |
-        |                  yogendrachavda                                                                   |
-        |                  Yogendra Chavda                                                                  |
+        | Influenced:      1) Marc Nicholas Rohde                                                           |
+        |                  2) Naveen Jain                                                                   |
+        |                  3) Cenk Aydin                                                                    |
+        |                  4) Daniel Podgaichenko                                                           |
+        |                  5) yogendrachavda                                                                |
+        |                  6) Yogendra Chavda                                                               |
          ---------------------------------------------------------------------------------------------------
-        | Books:           Business @ the Speed of Thought: Using a Digital Nervous System                  |
-        |                  The Road Ahead                                                                   |
-        |                  Open Letter to Hobbyists                                                         |
+        | Books:           1) Business @ the Speed of Thought: Using a Digital Nervous System               |
+        |                  2) The Road Ahead                                                                |
+        |                  3) Open Letter to Hobbyists                                                      |
          ---------------------------------------------------------------------------------------------------
-        | Books about:     Creative Capitalism: A Conversation with Bill Gates, Warren Buffett, and Othe... |
-        |                  The Microsoft File: The Secret Case against Bill Gates                           |
-        |                  Programmers at work                                                              |
+        | Books about:     1) Creative Capitalism: A Conversation with Bill Gates, Warren Buffett, and Othe |
+        |                     r Economic Leaders                                                            |
+        |                  2) The Microsoft File: The Secret Case against Bill Gates                        |
+        |                  3) Programmers at work                                                           |
          ---------------------------------------------------------------------------------------------------
         | Leadership:     |Organization            | Role            | Title            | From-To           |
         |                 ----------------------------------------------------------------------------------
@@ -64,16 +64,15 @@ Query-Question: Bill Gates
         |                 |Berkshire Hathaway      |                 |                  | (2004 / now)      |
         |                 |Corbis                  |                 | Chair            | (1989 / now)      |
          --------------------------------------------------------------------------------------------------
-        | Founded:         Bill & Melinda Gates Foundation                                                  |
-        |                  Microsoft Corporation                                                            |
-        |                  Corbis                                                                           |
-        |                  bgC3                                                                             |
-        |                  Cascade Investment                                                               |
-        |                  Microsoft Research                                                               |
-        |                  The Global Fund to Fight AIDS, Tuberculosis & Malaria                            |
+        | Founded:         1) Bill & Melinda Gates Foundation                                               |
+        |                  2) Microsoft Corporation                                                         |
+        |                  3) Corbis                                                                        |
+        |                  4) bgC3                                                                          |
+        |                  5) Cascade Investment                                                            |
+        |                  6) Microsoft Research                                                            |
+        |                  7) The Global Fund to Fight AIDS, Tuberculosis & Malaria                         |
          ---------------------------------------------------------------------------------------------------
 Query-Question: Robert Downey Jr.
-
 
 
          ---------------------------------------------------------------------------------------------------
@@ -106,9 +105,9 @@ Query-Question: Robert Downey Jr.
          ---------------------------------------------------------------------------------------------------
         | Siblings:        Allyson Downey                                                                   |
          ---------------------------------------------------------------------------------------------------
-        | Spouses:         Deborah Falconer (1992-05-29 - 2004-04-26)                                       |
-        |                  Susan Downey (2005-08-27 - now) @ Amagansett                                     |
-        |                  Sarah Jessica Parker (1984 - 1991)                                               |
+        | Spouses:         1) Deborah Falconer (1992-05-29 - 2004-04-26)                                    |
+        |                  2) Susan Downey (2005-08-27 - now)                                               |
+        |                  3) Sarah Jessica Parker (1984 - 1991)                                            |
          ---------------------------------------------------------------------------------------------------
         | Place of birth:  Manhattan                                                                        |
          ---------------------------------------------------------------------------------------------------
@@ -128,7 +127,6 @@ Query-Question: Robert Downey Jr.
         |                 |Thomas Reilly                          | Heart and Souls                         |
          --------------------------------------------------------------------------------------------------
 Query-Question: Jackson
-
 
 
          ---------------------------------------------------------------------------------------------------
@@ -153,54 +151,54 @@ Query-Question: Jackson
          ---------------------------------------------------------------------------------------------------
         | Birthday:        1958-08-29                                                                       |
          ---------------------------------------------------------------------------------------------------
-        | Spouses:         Lisa Marie Presley (1994-05-26 - 1996-08-20) @ Dominican Republic                |
-        |                  Debbie Rowe (1996-11-14 - 1999-10-08) @ Sydney                                   |
+        | Spouses:         1) Lisa Marie Presley (1994-05-26 - 1996-08-20)                                  |
+        |                  2) Debbie Rowe (1996-11-14 - 1999-10-08)                                         |
          ---------------------------------------------------------------------------------------------------
         | Place of birth:  Gary                                                                             |
          ---------------------------------------------------------------------------------------------------
-        | Siblings:        Janet Jackson                                                                    |
-        |                  Jermaine Jackson                                                                 |
-        |                  La Toya Jackson                                                                  |
-        |                  Marlon Jackson                                                                   |
-        |                  Randy Jackson                                                                    |
-        |                  Jackie Jackson                                                                   |
-        |                  Tito Jackson                                                                     |
-        |                  Rebbie Jackson                                                                   |
-        |                  Brandon Jackson                                                                  |
-        |                  Joh'Vonnie Jackson                                                               |
+        | Siblings:        1) Janet Jackson                                                                 |
+        |                  2) Jermaine Jackson                                                              |
+        |                  3) La Toya Jackson                                                               |
+        |                  4) Marlon Jackson                                                                |
+        |                  5) Randy Jackson                                                                 |
+        |                  6) Jackie Jackson                                                                |
+        |                  7) Tito Jackson                                                                  |
+        |                  8) Rebbie Jackson                                                                |
+        |                  9) Brandon Jackson                                                               |
+        |                  10) Joh'Vonnie Jackson                                                           |
          ---------------------------------------------------------------------------------------------------
         | Death:           2009-06-25 at Holmby Hills, cause: (Cardiac arrest, Homicide)                    |
          ---------------------------------------------------------------------------------------------------
-        | Books:           Moonwalk                                                                         |
-        |                  Dancing the Dream                                                                |
+        | Books:           1) Moonwalk                                                                      |
+        |                  2) Dancing the Dream                                                             |
          ---------------------------------------------------------------------------------------------------
-        | Influenced By:   Charlie Chaplin                                                                  |
-        |                  James Brown                                                                      |
-        |                  Walt Disney                                                                      |
-        |                  Redd Foxx                                                                        |
-        |                  Nipsey Russell                                                                   |
+        | Influenced By:   1) Charlie Chaplin                                                               |
+        |                  2) James Brown                                                                   |
+        |                  3) Walt Disney                                                                   |
+        |                  4) Redd Foxx                                                                     |
+        |                  5) Nipsey Russell                                                                |
          ---------------------------------------------------------------------------------------------------
-        | Influenced:      Usher                                                                            |
-        |                  Justin Timberlake                                                                |
-        |                  Lady Gaga                                                                        |
-        |                  Britney Spears                                                                   |
-        |                  Nicole Scherzinger                                                               |
-        |                  Leigh Francis                                                                    |
+        | Influenced:      1) Usher                                                                         |
+        |                  2) Justin Timberlake                                                             |
+        |                  3) Lady Gaga                                                                     |
+        |                  4) Britney Spears                                                                |
+        |                  5) Nicole Scherzinger                                                            |
+        |                  6) Leigh Francis                                                                 |
          ---------------------------------------------------------------------------------------------------
-        | Books about:     On Michael Jackson                                                               |
-        |                  The River of Winged Dreams                                                       |
-        |                  The Passion-Driven Writer and the Digital-Age Literary Marketplace               |
-        |                  To Walk a Lifetime in Michael Jackson's Moccasins                                |
-        |                  Michael Jackson and Summertime from This Point On                                |
-        |                  Looking at the World through Michael Jackson's Left Eye (Part 1)                 |
-        |                  Looking at the World through Michael Jackson's Left Eye (Part 2)                 |
-        |                  Looking at the World through Michael Jackson's Left Eye (Part 3 of 4)            |
-        |                  Looking at the World through Michael Jackson's Left Eye (Part 4 of 4)            |
-        |                  Evidence of Angels                                                               |
+        | Books about:     1) On Michael Jackson                                                            |
+        |                  2) The River of Winged Dreams                                                    |
+        |                  3) The Passion-Driven Writer and the Digital-Age Literary Marketplace            |
+        |                  4) To Walk a Lifetime in Michael Jackson's Moccasins                             |
+        |                  5) Michael Jackson and Summertime from This Point On                             |
+        |                  6) Looking at the World through Michael Jackson's Left Eye (Part 1)              |
+        |                  7) Looking at the World through Michael Jackson's Left Eye (Part 2)              |
+        |                  8) Looking at the World through Michael Jackson's Left Eye (Part 3 of 4)         |
+        |                  9) Looking at the World through Michael Jackson's Left Eye (Part 4 of 4)         |
+        |                  10) Evidence of Angels                                                           |
          ---------------------------------------------------------------------------------------------------
-        | Founded:         Sony/ATV Music Publishing                                                        |
-        |                  Heal the World Foundation                                                        |
-        |                  MJJ Music                                                                        |
+        | Founded:         1) Sony/ATV Music Publishing                                                     |
+        |                  2) Heal the World Foundation                                                     |
+        |                  3) MJJ Music                                                                     |
          ---------------------------------------------------------------------------------------------------
         | Films:          |Character                              | Film Name                               |
         |                 ----------------------------------------------------------------------------------
@@ -216,7 +214,6 @@ Query-Question: Jackson
         |                 |Mayor Ghoul                            | Michael Jackson's Ghosts                |
          --------------------------------------------------------------------------------------------------
 Query-Question: NFL
-
 
 
          ---------------------------------------------------------------------------------------------------
@@ -254,23 +251,22 @@ Query-Question: NFL
          ---------------------------------------------------------------------------------------------------
         | OfficialWebsite: http://www.nfl.com/                                                              |
          ---------------------------------------------------------------------------------------------------
-        | Teams:           Detroit Lions                                                                    |
-        |                  Carolina Panthers                                                                |
-        |                  Arizona Cardinals                                                                |
-        |                  Baltimore Ravens                                                                 |
-        |                  Jacksonville Jaguars                                                             |
-        |                  Kansas City Chiefs                                                               |
-        |                  Denver Broncos                                                                   |
-        |                  New York Jets                                                                    |
-        |                  New York Giants                                                                  |
-        |                  Oakland Raiders                                                                  |
+        | Teams:           1) Detroit Lions                                                                 |
+        |                  2) Carolina Panthers                                                             |
+        |                  3) Arizona Cardinals                                                             |
+        |                  4) Baltimore Ravens                                                              |
+        |                  5) Jacksonville Jaguars                                                          |
+        |                  6) Kansas City Chiefs                                                            |
+        |                  7) Denver Broncos                                                                |
+        |                  8) New York Jets                                                                 |
+        |                  9) New York Giants                                                               |
+        |                  10) Oakland Raiders                                                              |
          ---------------------------------------------------------------------------------------------------
         | Sport:           American football                                                                |
          ---------------------------------------------------------------------------------------------------
         | Championship:    Super Bowl                                                                       |
          ---------------------------------------------------------------------------------------------------
 Query-Question: NBA
-
 
 
          ---------------------------------------------------------------------------------------------------
@@ -294,16 +290,16 @@ Query-Question: NBA
          ---------------------------------------------------------------------------------------------------
         | OfficialWebsite: http://www.nba.com/                                                              |
          ---------------------------------------------------------------------------------------------------
-        | Teams:           Detroit Pistons                                                                  |
-        |                  Golden State Warriors                                                            |
-        |                  Los Angeles Lakers                                                               |
-        |                  Cleveland Cavaliers                                                              |
-        |                  Indiana Pacers                                                                   |
-        |                  Utah Jazz                                                                        |
-        |                  Orlando Magic                                                                    |
-        |                  Phoenix Suns                                                                     |
-        |                  Charlotte Bobcats                                                                |
-        |                  Houston Rockets                                                                  |
+        | Teams:           1) Detroit Pistons                                                               |
+        |                  2) Golden State Warriors                                                         |
+        |                  3) Los Angeles Lakers                                                            |
+        |                  4) Cleveland Cavaliers                                                           |
+        |                  5) Indiana Pacers                                                                |
+        |                  6) Utah Jazz                                                                     |
+        |                  7) Orlando Magic                                                                 |
+        |                  8) Phoenix Suns                                                                  |
+        |                  9) Charlotte Bobcats                                                             |
+        |                  10) Houston Rockets                                                              |
          ---------------------------------------------------------------------------------------------------
         | Sport:           Basketball                                                                       |
          ---------------------------------------------------------------------------------------------------
@@ -312,7 +308,6 @@ Query-Question: NBA
         | Slogan:          Where Amazing Happens                                                            |
          ---------------------------------------------------------------------------------------------------
 Query-Question: NY Knicks
-
 
 
          ---------------------------------------------------------------------------------------------------
@@ -344,8 +339,8 @@ Query-Question: NY Knicks
          ---------------------------------------------------------------------------------------------------
         | Leagues:         National Basketball Association                                                  |
          ---------------------------------------------------------------------------------------------------
-        | Championships:   1970 NBA Finals                                                                  |
-        |                  1973 NBA Finals                                                                  |
+        | Championships:   1) 1970 NBA Finals                                                               |
+        |                  2) 1973 NBA Finals                                                               |
          ---------------------------------------------------------------------------------------------------
         | Coaches:        |Name                    | Position                    | From/To                  |
         |                 ----------------------------------------------------------------------------------
@@ -367,7 +362,6 @@ Query-Question: NY Knicks
         |                 |Ronny Turiaf     |                      |                   | 2010 / 2011        |
          --------------------------------------------------------------------------------------------------
 Query-Question: Miami Heat
-
 
 
          ---------------------------------------------------------------------------------------------------
@@ -401,9 +395,9 @@ Query-Question: Miami Heat
          ---------------------------------------------------------------------------------------------------
         | Leagues:         National Basketball Association                                                  |
          ---------------------------------------------------------------------------------------------------
-        | Championships:   2006 NBA Finals                                                                  |
-        |                  2012 NBA Finals                                                                  |
-        |                  2013 NBA Finals                                                                  |
+        | Championships:   1) 2006 NBA Finals                                                               |
+        |                  2) 2012 NBA Finals                                                               |
+        |                  3) 2013 NBA Finals                                                               |
          ---------------------------------------------------------------------------------------------------
         | Coaches:        |Name                    | Position                    | From/To                  |
         |                 ----------------------------------------------------------------------------------
@@ -422,6 +416,7 @@ Query-Question: Miami Heat
         |                 |Yakhouba Diawara |                      |                   | 2008-08-07 / 20... |
         |                 |Ronny Turiaf     |                      |                   | 2012-03-21 / 20... |
          --------------------------------------------------------------------------------------------------
+
 
 part2:
 ./Main.py -key AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4 -f "queries2.txt" -t "question"
@@ -676,7 +671,6 @@ Query-Question: Who created Romeo and Juliet?
 35.  SparkNotes (As Author) created <Romeo and Juliet (No Fear Shakespeare)> 
 36.  Theophilus Cibber (As Author) created <Romeo and Juliet> 
 37.  William Shakespeare (As Author) created <Romeo and Juliet> , <The First Quarto of Romeo and Juliet> and <An excellent conceited tragedie of Romeo and Juliet> 
-
 
 
 
