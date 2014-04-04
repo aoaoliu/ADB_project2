@@ -15,14 +15,7 @@ Best,
    -Fotis
 """
 """
-The reference implementation does not use any tv_actor properties and you don't need to support any (e.g., tv_shows) for the FilmsParticipated property.
-Sometimes freebase might mention /tv/tv_actor where it meant to mention /film/actor but without mentioning it. That's why we have added the /tv/tv_actor as an extra check for the Actor type. That's also why at the description of properties we mention explicitly Film Name and not series name, shows name etc. (as these are related to /tv/tv_actor.)"
-"""
-"""
 What is definitely in the grading criteria is what you the infobox displays (properties and their extracted values.)
-"""
-"""
-Yes you need to print an infobox about it. Most likely this will correspond to a person, otherwise the infobox should be empty (if no FilmParticipated exist) based on the specification. This is an odd kind of case, but we had to come up with it in order to avoid redundancy checks. For instance, in that case we may had requested that you print the name of the tv actor as part of the Actor property which in most cases would duplicate the Person.Name property and you would need to make these extra check (or come up with a more sophisticated mapping) to avoid the same name being presented twice. Thus, for the sake of less redundancy checks your system may exhibit such odd cases.
 """
 
 
@@ -37,7 +30,7 @@ freebase_entity_types = {
 	'/book/book_subject': 'Author',
 	'/influence/influence_node': 'Author',
 	'/film/actor': 'Actor',
-	'/tv/tv_actor': 'Actor', # TODO if there is such an item, we should report, but we don't use the sub-terms here
+	'/tv/tv_actor': 'Actor',
 	'/organization/organization_founder': 'BusinessPerson',
 	'/business/board_member': 'BusinessPerson',
 	'/sports/sports_league': 'League',
@@ -109,7 +102,7 @@ def print_headline(name, list):
 
 
 def print_description(content):
-	# TODO by now we only print the first description
+	# we only print the first description
 	#content = content[0].encode("utf8", "ignore")
 	content = content[0]
 	temp = ''
@@ -499,7 +492,7 @@ def getentity(result_extracted, type_of_entities, type_list):
 			result[item] = result_list(result_extracted, item)
 
 		##### Actor #####
-		# TODO "/tv/tv_actor"
+		# not use: "/tv/tv_actor"
 		if item == '/film/actor/film':
 		# return format: [[character, film],[],[],[],...] (all strings; if empty '' will be returned)
 			for item1 in result_extracted[item]: # each item1 here is a film with actor
