@@ -147,7 +147,6 @@ for the following two, several sub-properties are also extracted; each coach/ros
 #	'/sports/sports_team_roster/to': 'To'
 
 Special:
-
 1. For the '/tv/tv_actor', we use it to judge whether this 'mid' is what we need (has at least one of the six higher-level entities), but we don't use its sub-entities to extract effective information. So there is possibly a scenario in which we have "xxx (Actor)", but the following infobox only have 'Name' and 'Description' entities, but nothing about the 'Actor'.
 
 2. We only extract the 'officialsite' information for a 'League', but not for anything else.
