@@ -20,13 +20,15 @@ b.  List:
 
     Main.py
 
-    infobox.py
+    Infobox.py
 
     Part2.py
 
-    transcript.txt
-
     Interface.py
+
+    api_key
+
+    transcript.txt
 
     queries1.txt
 

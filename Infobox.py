@@ -29,7 +29,8 @@ Yes you need to print an infobox about it. Most likely this will correspond to a
 """
 
 
-api_key = open(".api_key").read().strip()
+#api_key = open(".api_key").read().strip()
+api_key = "AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4"
 freebase_entity_types = {
 	'/type/object': 'Basic',
 	'/people/person': 'Person',

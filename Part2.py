@@ -6,7 +6,8 @@ from Interface import *
 
 
 class Part2:
-    KEY = api_key = open(".api_key").read().strip()
+    #KEY = api_key = open("api_key").read().strip()
+    KEY = "AIzaSyAdpaZqPgCVg9q1_KIeL8Y--LSLZ1UaJD4"
 
     def __init__(self):
         self.rawQuery = ""
