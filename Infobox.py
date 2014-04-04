@@ -407,7 +407,7 @@ def supported(mid):
 
 					type_of_entities[freebase_entity_types[temp]][temp].append(item)
 					type_list.append(item)
-	print ''
+	#print ''
 	# DEBUG
 	#print "This is the entity directory:"
 	#print type_of_entities
